@@ -1,0 +1,14 @@
+P09-1083.xml,Considering Question Topic
+P09-1083.xml,"Its weight twij is calculated by tf · idf (Otterbacher et al., 2005)."
+P09-1083.xml,"includingfact-based QA and text summarization (Erkan andRadev, 2004; Mihalcea and Tarau, 2004; Otter-bacher et al., 2005; Wan and Yang, 2008)."
+N06-1027.xml,"and sentence retrieval for question answering (Otterbacher et al., 2005)."
+C08-1062.xml,"These algorithms are all based on the query-sensitive LexRank (OtterBacher et al., 2005)."
+C10-2049.xml,"Component relevance scores are calculated using Term Frequency × Inverse Sentence Frequency (TF×ISF) (Otterbacher et al., 2005)"
+P06-1039.xml,"Our model is similar in spirit to the random- walk summarization model (Otterbacher et al., 2005)."
+D08-1032.xml,"A topic-sensitiveLexRank is proposed in (Otterbacher et al., 2005).As in LexRank, the set of sentences in a documentcluster is represented as a graph, where nodes aresentences and links between the nodes are inducedby a similarity relation between the sentences."
+D08-1032.xml,Thenthe system ranked the sentences according to a random walk model defined in terms of both the inter-sentence similarities and the similarities of the sentences to the topic description or question.
+D08-1032.xml,"To apply LexRank to query-focused context, a topic-sensitive version of LexRank isproposed in (Otterbacher et al., 2005)."
+P08-2003.xml,"A topic- sensitive LexRank is proposed in (Otterbacher et al., 2005)."
+P08-2003.xml,"To apply LexRank to query-focused context, a topic-sensitive version of LexRank is proposed in (Otterbacher et al., 2005)."
+P10-2055.xml,"Afterwards, our approach is evaluated against two existing approaches, which rely on the conventional semantic network and are able to capture binary relations only."
+P10-2055.xml,"The other one is based on topic-sensitive LexRank (Otterbacher et al., 2005), called title-sensitive PageRank here."

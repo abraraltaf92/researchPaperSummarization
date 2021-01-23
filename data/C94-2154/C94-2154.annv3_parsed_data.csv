@@ -1,0 +1,13 @@
+E95-1024.xml,"This test- grammar is based on the implementation of an analysis of partial vP topicalization in German (Hinrichs et al., 1994) in the Troll system (Gerdemann and King, 1994)."
+J99-1002.xml,"there are a number of different constraint languages within feature structure frameworks (e.g., Alshawi et al. 1991; Carpenter 1992; Dorre and Eisle 1991; Emele and Zajac 1990; Gerdemann and King 1994; Krieger and Schafer 1994; de Paiva 1993; Smolka 1989)."
+C94-2204.xml,"Gerdemann and G6tz's Troll system (see [G6Tz 1993], [GFRDEIVIANN AND KING 1994] and [GERDEMANN (FC)]) employs an efficient refinement of RES to test the satisfiability of feature structures."
+C94-2204.xml,"In fact, Troll represents each feature structure as a disjunction of the resolvants of the feature structure."
+C94-2204.xml,"Loosely speaking, the resolvants of a feature structure have the same underlying finite state automaton as the feature structure, and differ only in their output fllnction."
+C94-2204.xml,Troll exploits this property to represent each feature structure as a finite state automaton and a set of output flmctions.
+C94-2204.xml,The '1¥oll unifier is closed on these representations.
+C94-2204.xml,"Thus, though RES is computationally expensive, Troll uses RES only during compilation, never during run time."
+W97-1506.xml,"The practical effect of this is that Troll implements an exhaustive typing strategy which provides the stronger kind of inferencing over descriptions (Gerdemann and King, 1993, 1994) required by standard HPSG theories."
+C96-1076.xml,"449 PIION ~ lleben, liebt / [dl VFORM~ bse, fill} I, el SUBJ [] f rVFORM bse] ] ) [lieben -] [AaG~ 2t!]] { rv,,'OaMbsol } s,,,,s,, d2 Another example of where modularization might prove useful is in the treatment of typed feature structures presented in (Gerdemann and King, 1994)."
+C96-1076.xml,Their approach produces a set of feature structures from a satisfiability algorithm such that all of the feature structures have the same shape but the nodes may be labeled by different types.
+C96-1076.xml,They then collapse this set down to a single feature structure where nodes are labeled with dependent disjunctions of types.
+C96-1076.xml,Many of the groups of disjunctions in their feature structures can be made more efficient via modularization.

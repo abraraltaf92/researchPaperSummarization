@@ -1,0 +1,21 @@
+W11-1104.txt,"Current approaches have used clustering (Dorow and Widdows, 2003; Klapaftis and Manandhar, 2008) or statistical graph models (Klapaftis and Manandhar, 2010) to identify sense-specific subgraphs."
+S13-2038.xml,"Dorow and Widdows (2003) use the BNC to build a cooccurrencegraph for nouns, based on a co-occurrence frequency threshold."
+S13-2038.xml,They perform Markov clustering on this graph.
+W08-2207.xml,"highly accurateTopicSignaturesfor all monosemous wordsin WordNet(forinstance,usingInfoMap(DorowandWiddows,2003))."
+P04-1080.xml,"there are other related efforts on word sense discrimination (Dorow and Widdows, 2003; Fukumoto and Suzuki, 1999; Pedersen and Bruce, 1997)."
+P04-1080.xml,"The algorithm in (Dorow and Widdows, 2003) represented target noun word, its neighbors and their relationships using a graph in which each node denoted a noun and two nodes had an edge between them if they co-occurred with more than a given number of times."
+P04-1080.xml,Then senses of target word were iteratively learned by clustering the local graph of similar words around target word.
+P04-1080.xml,"Their algorithm required a threshold as input, which controlled the number of senses."
+D10-1073.xml,"Another graph-based method is presented in(Dorow and Widdows, 2003)."
+D10-1073.xml,They extract onlynoun neighbours that appear in conjunctions or dis-junctions with the target word.
+D10-1073.xml,"Additionally, theyextract second-order co-occurrences."
+C04-1194.xml,"The last trend, explored by (Véronis, 2003), (Dorow and Widdows, 2003) and (Rapp, 2003), starts from the cooccurrents of a word recorded from a corpus and builds its senses by gathering its cooccurrents according to their similarity or their dissimilarity."
+C04-1194.xml,"This method, as the ones presented in (Véronis, 2003), (Dorow and Widdows, 2003) and (Rapp, 2003), relies on the following hypothesis"
+C04-1194.xml,"As they rely on the detection of high-density areas in a network of cooccurrences, (Véronis, 2003) and (Dorow and Widdows, 2003) are the closest methods to ours."
+C04-1194.xml,"In our case, we chose a more general approach by working at the level of a simi­larity graph"
+C04-1194.xml,"From a global viewpoint, these two differences lead (Véronis, 2003) and (Dorow and Widdows, 2003) to build finer senses than ours."
+N07-3010.xml,The methodology of Dorow and Widdows (2003) was adopted
+W11-2214.xml,"This unsupervised discovery process produces a sense inventory where the number of senses is corpus-driven and where senses may reflect additional usages not present in a predefined sense inventory, such as those for medicine or law (Dorow and Widdows, 2003)."
+W11-2214.xml,"We follow Pantel and Lin (2002) and Dorow and Widdows (2003) using the sentence as contexts and all words with a dependency path of length 3 or less, with the last word and its relation as a feature."
+W06-3812.xml,"Similar to the approach as presented in (Dorow and Widdows, 2003) we construct a word graph."
+W06-3812.xml,Dorow and Widdows construct a graph for a target word w by taking the sub-graph induced by the neighborhood of w (without w) and clustering it with MCL.

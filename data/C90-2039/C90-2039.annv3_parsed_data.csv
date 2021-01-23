@@ -1,0 +1,21 @@
+P99-1061.txt,"While an improvement over simple destructive unification, Tomabechi's approach still suffers from what Kogure (Kogure, 1990) calls redundant copying."
+C92-1059.xml,"The extension is classified into class (1) above.Based on this paper's formalization, unification algorithms have been developed using graph unification techniques[23, 16]."
+C92-1059.xml,"Other versions based on more efficient graph unification methods such as Wroblewski's and Kogure's method [23, 16] have also been developed."
+C90-3046.xml,This is inefficient with many copy operations due to unfications of unnecessary features that do not contribute to successful unification [6].
+C90-3046.xml,Thus treatments such as strategic unification [6] have been developed.
+P91-1031.xml,This observation is the basis for a reordering method proposed by Kogure [1990].
+P91-1031.xml,Thus for any automatic counting scheme some constant shuffling and reshuffling of the conjunct order needs to be applied until the order stabilizes (see also [Kogure 1990]).
+E93-1008.xml,"The lazy copying approach ([Kogure, 1990], and [Emele, 1991] for lazy copying in TFS with historical backtracking) copies only overlapping parts of the structure."
+C92-2068.xml,At least two schemes have been proposed recently ])a.~ed Ul)OU this observation (namely [Kogure.
+C92-2068.xml,"1990] and [Emele, 1991]); however, both schemes are I)ased upon the increlllent'al Col)yiug sehellle all(l ~-LS ([e- scribed in [Tomal)eehi, 1991] incremental copying schemes inherently suffcr fi'om Early Copying as defined in that article."
+C92-2068.xml,• Data-Structure Sharing
+P91-1041.xml,"2In the large-scale HPSG-based spoken Japanese analysis system developed at ATR, sometimes 98 percent of the elapsed time is devoted to graph unification ([Kogure, 1990])."
+P91-1041.xml,"That is, unless some new scheme for reducing excessive copying is introduced such as scucture-sharing of an unchanged shared-forest ([Kogure, 1990])."
+C94-2143.xml,"A more eNcient unification algorithm would avoid this redundant copying (copying structures that can be shared by the input and resultant graphs) (Kogure, 1990)."
+C94-2143.xml,Kogure (1990) proposed a lazy incremental copy graph (LING) unification that uses dependency-directed eol)yiug
+P91-1042.xml,A better method would avoid (eliminate) such redundant copying as it is called by [Kogure 90].
+P91-1042.xml,"As it has been noticed by [Godden 90] and [Kogure 90], the key idea of avoiding ""redundant copying"" is to do copying lazily."
+P91-1042.xml,Copying of nodes will be delayed until a destructive change is about to take place.
+P91-1042.xml,Kogure uses a revised copynode procedure which maintains copy dependency information in order to avoid immediate copying.
+P91-1042.xml,"Similarly, in Kogure's approach, not all redundant copying is avoided in cases where there exists a feature path (a sequence of nodes connected by arcs) to a node that needs to be copied."
+W97-1503.xml,PM can also choose among different unification algorithms that have been designed to

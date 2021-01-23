@@ -1,0 +1,8 @@
+N13-1140.txt,"Recently, open-source tools have been released"
+W11-2605.txt,"The rules that are learned are in the format of so-called phonological replacement rules (Beesley and Karttunen, 2002) which we have later converted into equivalent finite-state transducers using the freely available foma toolkit (Hulden, 2009a)."
+W12-1003.txt,"The syllable counter is implemented using the foma software (Hulden, 2009), and the implementation (Hulden, 2006) can be found on the homepage of Figure 1"
+W12-6202.txt,"Since the question of transducer functionality is known to be decidable (Blattner and Head, 1977), and an efficient algorithm is given in Hulden (2009a), which is included in foma (with the command test functional) we can address this question by calculating the above for each constraint, if necessary, and then permute the violation markers until the above transducer is functional."
+W12-6211.txt,"Foma (Hulden, 2009) is a freely available2 toolkit that allows to both build and parse FS automata and transducers."
+W12-6212.txt,"This verb chain transfer module is implemented as a series of ordered replacement rules (Beesley and Karttunen, 2003) using the foma finite-state toolkit (Hulden, 2009)."
+W12-6212.txt,"In the work presented here, we have reimplemented and expanded the original rules written for XFST with the foma2 toolkit (Hulden, 2009)."
+W12-6213.txt,"This can be then be used in spell checking applications, for example, by integrating the lexicon with weighted transduc ers reflecting frequency information and error models (Hulden, 2009a; Pirinen et al., 2010)."

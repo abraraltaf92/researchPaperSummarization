@@ -1,0 +1,213 @@
+paper_title,Automatic Paraphrase Discovery based on Context and Keywords between NE Pairs
+abstract,Automatic paraphrase discovery is an important but challenging task.
+abstract,"We propose an unsupervised method to discover paraphrases from a large untagged corpus, without requiring any seed phrase or other cue."
+abstract,"We focus on phrases which connect two Named Entities (NEs), and proceed in two stages."
+abstract,The first stage identifies a keyword in each phrase and joins phrases with the same keyword into sets.
+abstract,The second stage links sets which involve the same pairs of individual NEs.
+abstract,"A total of 13,976 phrases were grouped."
+abstract,"The accuracy of the sets in representing paraphrase ranged from 73% to 99%, depending on the NE categories and set sizes; the accuracy of the links for two evaluated domains was 73% and 86%."
+Introduction,One of the difficulties in Natural Language Processing is the fact that there are many ways to express the same thing or event.
+Introduction,"If the expression is a word or a short phrase (like “corporation” and “company”), it is called a “synonym”."
+Introduction,"There has been a lot of research on such lexical relations, along with the creation of resources such as WordNet."
+Introduction,"If the expression is longer or complicated (like “A buys B” and “A’s purchase of B”), it is called “paraphrase”, i.e. a set of phrases which express the same thing or event."
+Introduction,"Recently, this topic has been getting more attention, as is evident from the Paraphrase Workshops in 2003 and 2004, driven by the needs of various NLP applications."
+Introduction,"For example, in Information Retrieval (IR), we have to match a user’s query to the expressions in the desired documents, while in Question Answering (QA), we have to find the answer to the user’s question even if the formulation of the answer in the document is different from the question."
+Introduction,"Also, in Information Extraction (IE), in which the system tries to extract elements of some events (e.g. date and company names of a corporate merger event), several event instances from different news articles have to be aligned even if these are expressed differently."
+Introduction,"We realize the importance of paraphrase; however, the major obstacle is the construction of paraphrase knowledge."
+Introduction,"For example, we can easily imagine that the number of paraphrases for “A buys B” is enormous and it is not possible to create a comprehensive inventory by hand."
+Introduction,"Also, we don’t know how many such paraphrase sets are necessary to cover even some everyday things or events."
+Introduction,"Up to now, most IE researchers have been creating paraphrase knowledge (or IE patterns) by hand and for specific tasks."
+Introduction,"So, there is a limitation that IE can only be performed for a predefined task, like “corporate mergers” or “management succession”."
+Introduction,"In order to create an IE system for a new domain, one has to spend a long time to create the knowledge."
+Introduction,"So, it is too costly to make IE technology “open- domain” or “on-demand” like IR or QA."
+Introduction,"In this paper, we will propose an unsupervised method to discover paraphrases from a large untagged corpus."
+Introduction,"We are focusing on phrases which have two Named Entities (NEs), as those types of phrases are very important for IE applications."
+Introduction,"After tagging a large corpus with an automatic NE tagger, the method tries to find sets of paraphrases automatically without being given a seed phrase or any kinds of cue."
+Algorithm.,2.1 Overview.
+Algorithm.,"Before explaining our method in detail, we present a brief overview in this subsection."
+Algorithm.,"First, from a large corpus, we extract all the NE instance pairs."
+Algorithm.,"Here, an NE instance pair is any pair of NEs separated by at most 4 syntactic chunks; for example, “IBM plans to acquire Lotus”."
+Algorithm.,"For each pair we also record the context, i.e. the phrase between the two NEs (Step1)."
+Algorithm.,"Next, for each pair of NE categories, we collect all the contexts and find the keywords which are topical for that NE category pair."
+Algorithm.,We use a simple TF/IDF method to measure the topicality of words.
+Algorithm.,"Hereafter, each pair of NE categories will be called a domain; e.g. the “Company – Company” domain, which we will call CC- domain (Step 2)."
+Algorithm.,"For each domain, phrases which contain the same keyword are gathered to build a set of phrases (Step 3)."
+Algorithm.,"Finally, we find links between sets of phrases, based on the NE instance pair data (for example, different phrases which link “IBM” and “Lotus”) (Step 4)."
+Algorithm.,"As we shall see, most of the linked sets are paraphrases."
+Algorithm.,This overview is illustrated in Figure 1.
+Algorithm.,Corpus Step 1 NE pair instances Step 2 Step 1.
+Algorithm.,"Extract NE instance pairs with contexts First, we extract NE pair instances with their context from the corpus."
+Algorithm.,The sentences in the corpus were tagged by a transformation-based chunker and an NE tagger.
+Algorithm.,The NE tagger is a rule-based system with 140 NE categories [Sekine et al. 2004].
+Algorithm.,"These 140 NE categories are designed by extending MUC’s 7 NE categories with finer sub-categories (such as Company, Institute, and Political Party for Organization; and Country, Province, and City for Location) and adding some new types of NE categories (Position Title, Product, Event, and Natural Object)."
+Algorithm.,All the NE pair instances which co-occur separated by at most 4 chunks are collected along with information about their NE types and the phrase between the NEs (the ‘context’).
+Algorithm.,Figure 2 shows examples of extracted NE pair instances and their contexts.
+Algorithm.,The data is sorted based on the frequency of the context (“a unit of” appeared 314 times in the corpus) and the NE pair instances appearing with that context are shown with their frequency (e.g. “NBC” and “General Electric Co.” appeared 10 times with the context “a unit of”).
+Algorithm.,Step 2.
+Algorithm.,"Find keywords for each NE pair When we look at the contexts for each domain, we noticed that there is one or a few important words which indicate the relation between the NEs (for example, the word “unit” for the phrase “a unit of”)."
+Algorithm.,"Once we figure out the important word (e.g. keyword), we believe we can capture the meaning of the phrase by the keyword."
+Algorithm.,We used the TF/ITF metric to identify keywords.
+Algorithm.,keywords Step 3 Sets of phrases based on keywords Step 4 Links between sets of phrases All the contexts collected for a given domain are gathered in a bag and the TF/ITF scores are calculated for all the words except stopwords in the bag.
+Algorithm.,"Here, the term frequency (TF) is the frequency of a word in the bag and the inverse term frequency (ITF) is the inverse of the log of the frequency in the entire corpus."
+Algorithm.,Figure 3 Figure 1.
+Algorithm.,Overview of the method 2.2 Step by Step Algorithm.
+Algorithm.,"In this section, we will explain the algorithm step by step with examples."
+Algorithm.,"Because of their size, the examples (Figures 2 to 4) appear at the end of the paper."
+Algorithm.,shows some keywords with their scores.
+Algorithm.,Step 3.
+Algorithm.,"Gather phrases using keywords Next, we select a keyword for each phrase – the top-ranked word based on the TF/IDF metric."
+Algorithm.,"(If the TF/IDF score of that word is below a threshold, the phrase is discarded.)"
+Algorithm.,We then gather all phrases with the same keyword.
+Algorithm.,Figure 4 shows some such phrase sets based on keywords in the CC-domain.
+Algorithm.,Step 4.
+Algorithm.,Cluster phrases based on Links We now have a set of phrases which share a keyword.
+Algorithm.,"However, there are phrases which express the same meanings even though they do not share the same keyword."
+Algorithm.,"For example, in Figure 3, we can see that the phrases in the “buy”, “acquire” and “purchase” sets are mostly paraphrases."
+Algorithm.,"At this step, we will try to link those sets, and put them into a single cluster."
+Algorithm.,Our clue is the NE instance pairs.
+Algorithm.,"If the same pair of NE instances is used with different phrases, these phrases are likely to be paraphrases."
+Algorithm.,"For example, the two NEs “Eastern Group Plc” and “Hanson Plc” have the following contexts."
+Algorithm.,"Here, “EG” represents “Eastern Group Plc”."
+Algorithm.,and “H” represents “Hanson Plc”.
+Algorithm.,"x EG, has agreed to be bought by H x EG, now owned by H x H to acquire EG x H’s agreement to buy EG Three of those phrases are actually paraphrases, but sometime there could be some noise; such as the second phrase above."
+Algorithm.,"So, we set a threshold that at least two examples are required to build a link."
+Algorithm.,More examples are shown in Figure 5.
+Algorithm.,Notice that the CC-domain is a special case.
+Algorithm.,"As the two NE categories are the same, we can’t differentiate phrases with different orders of par ticipants – whether the buying company or the to-be-bought company comes first."
+Algorithm.,The links can solve the problem.
+Algorithm.,"As can be seen in the example, the first two phrases have a different order of NE names from the last two, so we can determine that the last two phrases represent a reversed relation."
+Algorithm.,"In figure 4, reverse relations are indicated by `*’ next to the frequency."
+Algorithm.,Now we have sets of phrases which share a keyword and we have links between those sets.
+Experiments.,3.1 Corpora.
+Experiments.,"For the experiments, we used four newswire corpora, the Los Angeles Times/Washington Post, The New York Times, Reuters and the Wall Street Journal, all published in 1995."
+Experiments.,"They contain about 200M words (25M, 110M, 40M and 19M words, respectively)."
+Experiments.,All the sentences have been analyzed by our chunker and NE tag- ger.
+Experiments.,The procedure using the tagged sentences to discover paraphrases takes about one hour on a 2GHz Pentium 4 PC with 1GB of memory.
+Experiments.,3.2 Results.
+Experiments.,"In this subsection, we will report the results of the experiment, in terms of the number of words, phrases or clusters."
+Experiments.,We will report the evaluation results in the next subsection.
+Experiments.,Step 1.
+Experiments.,"Extract NE pair instances with contexts From the four years of newspaper corpus, we extracted 1.9 million pairs of NE instances."
+Experiments.,"The most frequent NE category pairs are “Person - Person (209,236), followed by “Country - Coun- try” (95,123) and “Person - Country” (75,509)."
+Experiments.,"The frequency of the Company – Company domain ranks 11th with 35,567 examples."
+Experiments.,"As lower frequency examples include noise, we set a threshold that an NE category pair should appear at least 5 times to be considered and an NE instance pair should appear at least twice to be considered."
+Experiments.,"This limits the number of NE category pairs to 2,000 and the number of NE pair instances to 0.63 million."
+Experiments.,Step 2.
+Experiments.,Find keywords for each NE pair The keywords are found for each NE category pair.
+Experiments.,"For example, in the CC-domain, 96 keywords are found which have TF/ITF scores above a threshold; some of them are shown in Figure 3."
+Experiments.,"It is natural that the larger the data in the domain, the more keywords are found."
+Experiments.,"In the “Person – Person” domain, 618 keywords are found, and in the “Country – Country” domain, 303 keywords are found."
+Experiments.,"In total, for the 2,000 NE category pairs, 5,184 keywords are found."
+Experiments.,Step 3.
+Experiments.,"Gather phrases using keywords Now, the keyword with the top TF/ITF score is selected for each phrase."
+Experiments.,"If a phrase does not contain any keywords, the phrase is discarded."
+Experiments.,"For example, out of 905 phrases in the CC- domain, 211 phrases contain keywords found in step 2."
+Experiments.,"In total, across all domains, we kept 13,976 phrases with keywords."
+Experiments.,Step 4.
+Experiments.,"Link phrases based on instance pairs Using NE instance pairs as a clue, we find links between sets of phrases."
+Experiments.,"In the CC-domain, there are 32 sets of phrases which contain more than 2 phrases."
+Experiments.,We concentrate on those sets.
+Experiments.,"Among these 32 sets, we found the following pairs of sets which have two or more links."
+Experiments.,Here a set is represented by the keyword and the number in parentheses indicates the number of shared NE pair instances.
+Experiments.,buy - acquire (5) buy - agree (2) buy - purchase (5) buy - acquisition (7) buy - pay (2)* buy - buyout (3) buy - bid (2) acquire - purchase (2) acquire - acquisition (2) acquire - pay (2)* purchase - acquisition (4) purchase - stake (2)* acquisition - stake (2)* unit - subsidiary (2) unit - parent (5) It is clear that these links form two clusters which are mostly correct.
+Experiments.,We will describe the evaluation of such clusters in the next subsection.
+Experiments.,3.3 Evaluation Results.
+Experiments.,We evaluated the results based on two metrics.
+Experiments.,One is the accuracy within a set of phrases which share the same keyword; the other is the accuracy of links.
+Experiments.,"We picked two domains, the CC-domain and the “Person – Company” domain (PC-domain), for the evaluation, as the entire system output was too large to evaluate."
+Experiments.,It is not easy to make a clear definition of “paraphrase”.
+Experiments.,"Sometimes extracted phrases by themselves are not meaningful to consider without context, but we set the following criteria."
+Experiments.,"If two phrases can be used to express the same relationship within an information extraction application (“scenario”), these two phrases are paraphrases."
+Experiments.,"Although this is not a precise criterion, most cases we evaluated were relatively clear-cut."
+Experiments.,"In general, different modalities (“planned to buy”, “agreed to buy”, “bought”) were considered to express the same relationship within an extraction setting."
+Experiments.,"We did have a problem classifying some modified noun phrases where the modified phrase does not represent a qualified or restricted form of the head, like “chairman” and “vice chairman”, as these are both represented by the keyword “chairman”."
+Experiments.,"In this specific case, as these two titles could fill the same column of an IE table, we regarded them as paraphrases for the evaluation."
+Experiments.,Evaluation within a set The evaluation of paraphrases within a set of phrases which share a keyword is illustrated in Figure 4.
+Experiments.,"For each set, the phrases with bracketed frequencies are considered not paraphrases in the set."
+Experiments.,"For example, the phrase “'s New York-based trust unit,” is not a paraphrase of the other phrases in the “unit” set."
+Experiments.,"As you can see in the figure, the accuracy for the domain is quite high except for the “agree” set, which contains various expressions representing different relationships for an IE application."
+Experiments.,The accuracy is calculated as the ratio of the number of paraphrases to the total number of phrases in the set.
+Experiments.,"The results, along with the total number of phrases, are shown in Table 1."
+Experiments.,D o m ai n # of ph ras es t o t a l p h r a s e s ac cu ra cy C C 7 o r m o r e 1 0 5 8 7 . 6 % 6 o r l e s s 1 0 6 6 7 . 0 % P C 7 o r m o r e 3 5 9 9 9 . 2 % 6 o r l e s s 2 5 5 6 5 . 1 % Table 1.
+Experiments.,Evaluation results within sets Table 1 shows the evaluation result based on the number of phrases in a set.
+Experiments.,The larger sets are more accurate than the small sets.
+Experiments.,We can make several observations on the cause of errors.
+Experiments.,"One is that smaller sets sometime have meaningless keywords, like “strength” or “add” in the CC-domain, or “compare” in the PC-domain."
+Experiments.,Eight out of the thirteen errors in the high frequency phrases in the CC-domain are the phrases in “agree”.
+Experiments.,"As can be seen in Figure 3, the phrases in the “agree” set include completely different relationships, which are not paraphrases."
+Experiments.,Other errors include NE tagging errors and errors due to a phrase which includes other NEs.
+Experiments.,"For example, in the phrase “Company-A last week purchased rival Marshalls from Company-B”, the purchased company is Marshalls, not Company-B."
+Experiments.,Also there are cases where one of the two NEs belong to a phrase outside of the relation.
+Experiments.,"For example, from the sentence “Mr."
+Experiments.,"Smith estimates Lotus will make a profit this quarter…”, our system extracts “Smith esti mates Lotus” as an instance."
+Experiments.,Obviously “Lotus” is part of the following clause rather than being the object of “estimates” and the extracted instance makes no sense.
+Experiments.,We will return to these issues in the discussion section.
+Experiments.,"Evaluation of links A link between two sets is considered correct if the majority of phrases in both sets have the same meaning, i.e. if the link indicates paraphrase."
+Experiments.,All the links in the “CC-domain are shown in Step 4 in subsection 3.2.
+Experiments.,"Out of those 15 links, 4 are errors, namely “buy - pay”, “acquire - pay”, “purchase - stake” “acquisition - stake”."
+Experiments.,"When a company buys another company, a paying event can occur, but these two phrases do not indicate the same event."
+Experiments.,The similar explanation applies to the link to the “stake” set.
+Experiments.,We checked whether the discovered links are listed in WordNet.
+Experiments.,"Only 2 link in the CC- domain (buy-purchase, acquire-acquisition) and 2 links (trader-dealer and head-chief) in the PC- domain are found in the same synset of Word- Net 2.1 (http://wordnet.princeton.edu/)."
+Experiments.,This result suggests the benefit of using the automatic discovery method.
+Experiments.,D o m ai n Li n k ac cu ra cy W N c o v e r a g e C C 7 3 . 3 % 2 / 1 1 P C 8 8 . 9 % 2 / 8 Table 2.
+Experiments.,Evaluation results for links
+Related Work.,The work reported here is closely related to [Ha- segawa et al. 04].
+Related Work.,"First, we will describe their method and compare it with our method."
+Related Work.,"They first collect the NE instance pairs and contexts, just like our method."
+Related Work.,"However, the next step is clearly different."
+Related Work.,They cluster NE instance pairs based on the words in the contexts using a bag- of-words method.
+Related Work.,"In order to create good-sized vectors for similarity calculation, they had to set a high frequency threshold, 30."
+Related Work.,"Because of this threshold, very few NE instance pairs could be used and hence the variety of phrases was also limited."
+Related Work.,"Instead, we focused on phrases and set the frequency threshold to 2, and so were able to utilize a lot of phrases while minimizing noise."
+Related Work.,"[Hasegawa et al. 04] reported only on relation discovery, but one could easily acquire para phrases from the results."
+Related Work.,The number of NE instance pairs used in their experiment is less than half of our method.
+Related Work.,There have been other kinds of efforts to discover paraphrase automatically from corpora.
+Related Work.,"One of such approaches uses comparable documents, which are sets of documents whose content are found/known to be almost the same, such as different newspaper stories about the same event [Shinyama and Sekine 03] or different translations of the same story [Barzilay 01]."
+Related Work.,"The availability of comparable corpora is limited, which is a significant limitation on the approach."
+Related Work.,Another approach to finding paraphrases is to find phrases which take similar subjects and objects in large corpora by using mutual information of word distribution [Lin and Pantel 01].
+Related Work.,This approach needs a phrase as an initial seed and thus the possible relationships to be extracted are naturally limited.
+Related Work.,There has also been work using a bootstrap- ping approach [Brin 98; Agichtein and Gravano 00; Ravichandran and Hovy 02].
+Related Work.,"The basic strategy is, for a given pair of entity types, to start with some examples, like several famous book title and author pairs; and find expressions which contains those names; then using the found expressions, find more author and book title pairs."
+Related Work.,This can be repeated several times to collect a list of author / book title pairs and expressions.
+Related Work.,"However, those methods need initial seeds, so the relation between entities has to be known in advance."
+Related Work.,This limitation is the obstacle to making the technology “open domain”.
+Discussion.,"Keywords with more than one word In the evaluation, we explained that “chairman” and “vice chairman” are considered paraphrases."
+Discussion.,"However, it is desirable if we can separate them."
+Discussion.,This problem arises because our keywords consist of only one word.
+Discussion.,"Sometime, multiple words are needed, like “vice chairman”, “prime minister” or “pay for” (“pay” and “pay for” are different senses in the CC-domain)."
+Discussion.,One possibility is to use n-grams based on mutual information.
+Discussion.,"If there is a frequent multi-word sequence in a domain, we could use it as a keyword candidate."
+Discussion.,"Keyword detection error Even if a keyword consists of a single word, there are words which are not desirable as keywords for a domain."
+Discussion.,"As was explained in the results section, “strength” or “add” are not desirable keywords in the CC-domain."
+Discussion.,"In our experiment, we set the threshold of the TF/ITF score empirically using a small development corpus; a finer adjustment of the threshold could reduce the number of such keywords."
+Discussion.,"Also, “agree” in the CC-domain is not a desirable keyword."
+Discussion.,"It is a relatively frequent word in the domain, but it can be used in different extraction scenarios."
+Discussion.,"In this domain the major scenarios involve the things they agreed on, rather than the mere fact that they agreed."
+Discussion.,"“Agree” is a subject control verb, which dominates another verb whose subject is the same as that of “agree”; the latter verb is generally the one of interest for extraction."
+Discussion.,"We have checked if there are similar verbs in other major domains, but this was the only one."
+Discussion.,"Using structural information As was explained in the results section, we extracted examples like “Smith estimates Lotus”, from a sentence like “Mr."
+Discussion.,Smith estimates Lotus will make profit this quarter…”.
+Discussion.,"In order to solve this problem, a parse tree is needed to understand that “Lotus” is not the object of “estimates”."
+Discussion.,Chunking is not enough to find such relationships.
+Discussion.,This remains as future work.
+Discussion.,Limitations There are several limitations in the methods.
+Discussion.,"The phrases have to be the expressions of length less than 5 chunks, appear between two NEs."
+Discussion.,"Also, the method of using keywords rules out phrases which don’t contain popular words in the domain."
+Discussion.,We are not claiming that this method is almighty.
+Discussion.,Rather we believe several methods have to be developed using different heuristics to discover wider variety of paraphrases.
+Discussion.,Applications The discovered paraphrases have multiple applications.
+Discussion.,One obvious application is information extraction.
+Discussion.,"In IE, creating the patterns which express the requested scenario, e.g. “management succession” or “corporate merger and acquisition” is regarded as the hardest task."
+Discussion.,The discovered paraphrases can be a big help to reduce human labor and create a more comprehensive pattern set.
+Discussion.,"Also, expanding on the techniques for the automatic generation of extraction patterns (Riloff 96; Sudo 03) using our method, the extraction patterns which have the same meaning can be automatically linked, enabling us to produce the final table fully automatically."
+Discussion.,"While there are other obstacles to completing this idea, we believe automatic paraphrase discovery is an important component for building a fully automatic information extraction system."
+Conclusion.,We proposed an unsupervised method to discover paraphrases from a large untagged corpus.
+Conclusion.,"We are focusing on phrases which have two Named Entities (NEs), as those types of phrases are very important for IE applications."
+Conclusion.,"After tagging a large corpus with an automatic NE tagger, the method tries to find sets of paraphrases automatically without being given a seed phrase or any kind of cue."
+Conclusion.,"In total 13,976 phrases are assigned to sets of phrases, and the accuracy on our evaluation data ranges from 65 to 99%, depending on the domain and the size of the sets."
+Conclusion.,The accuracies for link were 73% and 86% on two evaluated domains.
+Conclusion.,These results are promising and there are several avenues for improving on these results.
+Acknowledgements.,"This research was supported in part by the Defense Advanced Research Projects Agency as part of the Translingual Information Detection, Extraction and Summarization (TIDES) program, under Grant N66001001-18917 from the Space and Naval Warfare Systems Center, San Diego, and by the National Science Foundation under Grant IIS00325657."
+Acknowledgements.,This paper does not necessarily reflect the position of the U.S. Government.
+Acknowledgements.,"We would like to thank Prof. Ralph Grish- man, Mr. Takaaki Hasegawa and Mr. Yusuke Shinyama for useful comments, discussion and evaluation."

@@ -1,0 +1,12 @@
+W93-0111.xml,"This approach is similar in spirit to the iterative computational approaches of the Hidden Markov Models (Kupiec, 1989"
+A92-1018.xml,"In [Kupiec, 1989a], networks are used to selectively augment the context in a basic first- order model, rather than using uniformly second-order dependencies."
+A92-1018.xml,"adequate training requires processing from tens of thousands to hundreds of thousands of tokens [Kupiec, 1989a]."
+J93-2006.xml,We report in Section 2 on our experiments on the assignment of part of speech to words in text.
+J93-2006.xml,The effectiveness of such models is well known (DeRose 1988; Church 1988; Kupiec 1989; Jelinek 1985)
+H91-1046.xml,Kupiec (1989) has experimented with the inclusion of networks to model mixed-order dependencies.
+H91-1046.xml,"The vocabulary entry may be a word or an equivalence class based on categories (Kupiec, 1989)."
+C00-1081.xml,"In a practical tagger (Kupiec, 1989), only the most frequent 100 words are lexicalized."
+H92-1022.xml,"The parameters of the model can be estimated from tagged (1, 3, 4, 6, 12] or untagged [2, 9, 11] text."
+H92-1022.xml,"One area in which the statistical approach has done par­ ticularly well is automatic part of speech tagging, as­ signing each word in an input sentence its proper part of speech (1, 2, 3, 4, 6, 9, 11, 12]."
+C92-1060.xml,"Instead, only common words are represented individually; the rest of the words in the dictionary are partitioned into word equivalence classes (Kupiec, 1989)"
+J93-1001.xml,the empirical approach has been adopted by almost all contemporary part-of-speech programs
