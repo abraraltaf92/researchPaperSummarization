@@ -1,0 +1,4 @@
+ref,citation_2,reference_id
+"Currently, we address the question-focused sentence retrieval task.",2.4737888558522503,reference_15
+"For each sentence and question pair in a givencluster, the judges were asked to indicate whetheror not the sentence contained a complete answerto the question.",2.755758797295844,reference_102
+"This model hasproven to be successful in query-based sentence retrieval (Allan et al., 2003), and is used as our competitive baseline in this study (e.g. Tables 4, 5 and7).",2.859062020809192,reference_58

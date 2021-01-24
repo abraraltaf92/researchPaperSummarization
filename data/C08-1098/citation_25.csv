@@ -1,0 +1,4 @@
+ref,citation_25,reference_id
+"Morcˇe’s tagging accuracy was 95.12%, 0.3% better than the n-gram tagger.",2.4448607732475693,reference_218
+The tagging accuracy reported by Kempe was below that of a traditional trigram tagger.,2.7639807126063825,reference_209
+By far the most frequent tagging error was the confusion of nominative and accusative case.,2.821985798380469,reference_184

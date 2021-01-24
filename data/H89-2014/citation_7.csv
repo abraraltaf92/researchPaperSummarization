@@ -1,0 +1,4 @@
+ref,citation_7,reference_id
+"The basic model tagged these sentences correctly, except for- ""range"" and ""rises"" which were tagged as noun and plural-noun respectively 1.",2.500281143700245,reference_111
+"In this situation, the Baum-Welch algorithm (Baum, 1972) can be used to estimate the model parameters.",2.6793474550417904,reference_23
+"In the document, 142 words were tagged as unknown (their possible categories were not known).",2.746521434129906,reference_125

@@ -1,0 +1,4 @@
+ref,citation_0,reference_id
+‘insuff’ means the correct translation appears less than 10 times in the English part of the comparable corpus.,2.919023013346346,reference_153
+"In this paper, we proposed a new method to mine new word translations from comparable corpora, by combining context and transliteration information, which are complementary sources of information.",2.922363531752865,reference_172
+"Much research has been done on using parallel corpora to learn bilingual lexicons (Melamed, 1997; Moore, 2003).",2.9295885847680254,reference_7

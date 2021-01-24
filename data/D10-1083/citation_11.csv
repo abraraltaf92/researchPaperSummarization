@@ -1,0 +1,4 @@
+ref,citation_11,reference_id
+"On one end of the spectrum are clustering approaches that assign a single POS tag to each word type (Schutze, 1995; Lamar et al., 2010).",2.6681407003499635,reference_36
+"However, our full model takes advantage of word features not present in Grac¸a et al.",2.759103566656737,reference_210
+"Even without features, but still using the tag prior, our median result is 52.0%, still significantly outperforming Grac¸a et al.",2.8841792627468794,reference_212

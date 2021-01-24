@@ -1,0 +1,4 @@
+ref,citation_4,reference_id
+"Following the method in (Widdows and Dorow, 2002), we build a graph in which each node represents a noun and two nodes have an edge between them if they co-occur in lists more than a given number of times 1.",1.6057906392536023,reference_19
+The algorithm is based on a graph model representing words and relationships between them.,2.582470670636892,reference_1
+"In our simple model based on noun co-occurrences in lists, step 5 corresponds to rebuilding the graph under the restriction that the nodes in the new graph not co-occur (or at least not very often) with any of the cluster members already extracted.",2.6302183878708534,reference_73

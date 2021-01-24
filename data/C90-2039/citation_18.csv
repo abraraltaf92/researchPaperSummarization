@@ -1,0 +1,4 @@
+ref,citation_18,reference_id
+"With such a method, it is possible to delay copying a node until either its own contents need to change (e.g., node G3/Ka c !7>) or until it is found to have an arc (sequence) to a node t, hat needs to be copied (e.g., node X G3/<a c> in Fig.",2.6699394004790715,reference_141
+"For example, the node Y(G3/<o c g>) will be modified to be the unification result of G 1/<a c g> (or G1/<b d>) and G2/<b d> when the feature path <b d> will be treated.",2.7349510569220303,reference_114
+"For example, consider the case when feature a is first treated at the root nodes of G1 and G2 in Fig.",2.7370005076265054,reference_108

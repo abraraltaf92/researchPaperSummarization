@@ -1,0 +1,4 @@
+ref,citation_1,reference_id
+"The tagger may use an external lexicon which supplies entries for additional words which are not found in the training corpus, and additional tags for words which did occur in the training data.",2.009628381058799,reference_99
+"Unfortunately, the POS trigram consisting of the tags of the first three words does not occur in the Tiger corpus.",2.665268668602052,reference_22
+Hence there is no need to put aside training data for parameter tuning.,2.8371409376068906,reference_201

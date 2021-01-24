@@ -1,0 +1,4 @@
+ref,citation_12,reference_id
+"In this paper, we describe a search procedure for statistical machine translation (MT) based on dynamic programming (DP).",2.894064618811281,reference_0
+The quasi-monotone search performs best in terms of both error rates mWER and SSER.,2.931166233551686,reference_176
+"The model is often further restricted so that each source word is assigned to exactly one target word (Brown et al., 1993; Ney et al., 2000).",3.0502411857523843,reference_8

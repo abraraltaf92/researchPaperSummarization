@@ -1,0 +1,4 @@
+ref,citation_14,reference_id
+"Since we are using comparable corpora, it is possible that the translation of a new word does not exist in the target corpus.",2.6105089489098567,reference_48
+"In order for a machine translation system to translate these new words correctly, its bilingual lexicon needs to be constantly updated with new word translations.",2.6621410111909314,reference_6
+Comparable corpora refer to texts that are not direct translation but are about the same topic.,2.7944272092871523,reference_9

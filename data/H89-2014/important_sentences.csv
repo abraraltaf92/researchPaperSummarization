@@ -1,0 +1,31 @@
+reference_id,reference
+reference_0,The paper describes refinements that are currently being investigated in a model for part-of-speech assignment to words in unrestricted text.
+reference_2,Words are represented by equivalence classes to reduce the number of parameters required and provide an essentially vocabulary-independent model.
+reference_7,Application areas include speech recognition/synthesis and information retrieval.
+reference_20,The systems previously mentioned require a pre-tagged training corpus in order to collect word counts or to perform back-propagation.
+reference_22,"An alternative approach taken by Jelinek, (Jelinek, 1985) is to view the training problem in terms of a ""hidden"" Markov model: that is, only the words of the training text are available, their corresponding categories are not known."
+reference_23,"In this situation, the Baum-Welch algorithm (Baum, 1972) can be used to estimate the model parameters."
+reference_27,One aim of the work is to investigate the quality and performance of models with minimal parameter descriptions.
+reference_28,"In this regard, word equivalence classes were used (Kupiec, 1989)."
+reference_33,"In the 21 category model reported in Kupiec (1989) only 129 equivalence classes were required to cover a 30,000 word dictionary."
+reference_37,"However they are both members of the equivalence class noun-or-verb, and so are considered to behave identically."
+reference_51,"The implementation of the hidden Markov model is based on that of Rabiner, Levinson and Sondhi (1983)."
+reference_53,"The initial values of the model parameters are calculated from word occurrence probabilities, such that words are initially assumed to function equally probably as any of their possible categories."
+reference_60,Extending the Basic Model The basic model was used as a benchmark for successive improvements.
+reference_76,"ADJECTIVE DETERMINER To all states NOUN in Basic Network ""Transitions to � To all states all states in in Basic Network Basic Network except NOUN and ADJECTIVE AUGMENTED NETWORK BASIC NETWORK FULLY-CONNECTED NETWORK CONTAINING ALL STATES EXCEPT DETERMINER Figure 1: Extending the Basic Model Augmenting the Model by Use of Networks The basic model consists of a first-order fully connected network."
+reference_81,For an n category model this requires n 3 transition probabilities.
+reference_83,"In practice, models have been limited to second-order, and smoothing methods are normally required to deal with the problem of estimation with limited data."
+reference_87,Mixed higher- order context can be modeled by introducing explicit state sequences.
+reference_94,"To model the context necessary to correct the error, two extra states are used, as shown in Figure 1."
+reference_95,"The ""augmented network"" uniquely models all second-order dependencies of the type determiner -noun - X, and determiner -adjective -X (X ranges over {cl...cn})."
+reference_101,A state is generally used in several places (E.g. in Figure 1.
+reference_106,"In this section two illustrations are given, concerning simple subject/verb agreement across an intermediate prepositional phrase."
+reference_111,"The basic model tagged these sentences correctly, except for- ""range"" and ""rises"" which were tagged as noun and plural-noun respectively 1."
+reference_113,"To model such dependency across the phrase, the networks shown in Figure 2 can be used."
+reference_124,"A 30,000 word dictionary was used, supplemented by inflectional analysis for words not found directly in the dictionary."
+reference_125,"In the document, 142 words were tagged as unknown (their possible categories were not known)."
+reference_126,"A total of 1,526 words had ambiguous categories (i.e. 40% of the document)."
+reference_129,"The performance of a tagging program depends on the choice and number of categories used, and the correct tag assignment for words is not always obvious."
+reference_137,"SINGULAR ALL STATES IN BASIC NETWORK NOT SHOWN Figure 2: Augmented Networks for Example of Subject/Verb Agreement For example, consider the word ""up"" in the following sentences: ""He ran up a big bill""."
+reference_146,"A pre-tagged training corpus is not required, and the tagger can cope with words not found in the training text."
+reference_147,"It can be trained reliably on moderate amounts of training text, and through the use of selectively augmented networks it can model high-order dependencies without requiring an excessive number of parameters."

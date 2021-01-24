@@ -1,0 +1,4 @@
+ref,citation_16,reference_id
+Results for 2 and for 10 preceding POS tags as context are reported for our tagger.,2.542499396072148,reference_148
+"Note that only the words, but not the POS tags from the test and development data were used, here.",2.563616477442521,reference_132
+"Unfortunately, the POS trigram consisting of the tags of the first three words does not occur in the Tiger corpus.",2.5814428294990064,reference_22

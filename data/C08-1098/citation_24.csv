@@ -1,0 +1,4 @@
+ref,citation_24,reference_id
+The first result was obtained with TnT trained on Tiger data which was mapped to STTS before.,3.061731293059438,reference_151
+Hence there is no need to put aside training data for parameter tuning.,3.0988993730696737,reference_201
+"Note that only the words, but not the POS tags from the test and development data were used, here.",3.1494345811385536,reference_132

@@ -1,0 +1,4 @@
+ref,citation_4,reference_id
+All context attributes other than the base POS are always used in combination with the base POS.,2.274039162514143,reference_66
+"Discriminatively trained taggers, on the other hand, have difficulties to handle the huge number of features which are active at the same time if any possible combination of context attributes defines a separate feature.",2.474568963620825,reference_38
+"Because of the different corpora used and the different amounts of lexical information available, a direct comparison to our results is difficult.",2.599491663837556,reference_220

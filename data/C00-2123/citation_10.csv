@@ -1,0 +1,4 @@
+ref,citation_10,reference_id
+"On average, 6 reference translations per automatic translation are available.",3.0443097902077723,reference_156
+The following two error criteria are used in our experiments: mWER: multi-reference WER: We use the Levenshtein distance between the automatic translation and several reference translations as a measure of the translation errors.,3.155698786012654,reference_155
+6.,3.156659622492671,reference_69

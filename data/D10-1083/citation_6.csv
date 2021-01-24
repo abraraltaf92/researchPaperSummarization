@@ -1,0 +1,4 @@
+ref,citation_6,reference_id
+"In our work, we demonstrate that using a simple na¨ıveBayes approach also yields substantial performance gains, without the associated training complexity.",2.6052601731085625,reference_50
+"Even without features, but still using the tag prior, our median result is 52.0%, still significantly outperforming Grac¸a et al.",2.6620339501266685,reference_212
+"(2009) also report results on English, but on the reduced 17 tag set, which is not comparable to ours).",2.7135852494181933,reference_208

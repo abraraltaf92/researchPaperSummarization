@@ -1,0 +1,4 @@
+ref,citation_3,reference_id
+Table 3 shows the results of an evaluation based on the plain STTS tagset.,2.547433227710609,reference_150
+This strategy returned the best results on the development data.,2.58106783210721,reference_135
+The best results are obtained with a context size of 10.,2.717328050677013,reference_170

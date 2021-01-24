@@ -1,0 +1,4 @@
+ref,citation_1,reference_id
+"In contrast to pure Markov clustering, we don't try to find a complete clustering of G into senses at once.",3.0762272942841054,reference_53
+"This is achieved, in a manner similar to Pantel and Lin's (2002) sense clustering approach, by removing c's features from the set of features used for finding similar words.",3.138746432214866,reference_56
+"section 2), and we plan to evaluate the uses of our clustering algorithm for unsupervised disambiguation more thoroughly.",3.2218287473498584,reference_97

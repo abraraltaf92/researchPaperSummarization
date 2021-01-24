@@ -1,0 +1,4 @@
+ref,citation_10,reference_id
+"(Robertson et al.,1992; Salton et al., 1993)), it remains important andyet often overlooked.",2.7165997979682923,reference_17
+"Below,we describe a topic-sensitive version of LexRank,which is more appropriate for the question-focusedsentence retrieval problem.",2.9146554548728467,reference_52
+"As discussed in Section 2, our goal wasto develop a topic-sensitive version of LexRank andto use it to improve a baseline system, which hadpreviously been used successfully for query-basedsentence retrieval (Allan et al., 2003).",2.9838228584355835,reference_186

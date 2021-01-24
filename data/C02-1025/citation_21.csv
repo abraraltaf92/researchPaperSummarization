@@ -1,0 +1,4 @@
+ref,citation_21,reference_id
+"Hence, for each token, one of the four features zone-TXT, zone- HL, zone-DATELINE, or zone-DD is set to 1, and the other 3 are set to 0.",2.351858238432877,reference_79
+"If is one of Monday, Tuesday, . . .",2.368393673069241,reference_112
+"For example, in MUC6, there are four zones (TXT, HL, DATELINE, DD).",2.5215340302466505,reference_78

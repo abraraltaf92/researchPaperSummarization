@@ -1,0 +1,4 @@
+ref,citation_5,reference_id
+"A larger context of up to 10 preceding POS tags further increased the accuracy by 0.6, 0.6, and 0.7%, respectively.",2.610984758554024,reference_162
+"Morcˇe’s tagging accuracy was 95.12%, 0.3% better than the n-gram tagger.",2.724788606209028,reference_218
+These figures are considerably lower than e.g. the 96.7% accuracy reported in Brants (2000) for the Negra treebank which is annotated with STTS tags without agreement features.,2.7358294914656645,reference_167

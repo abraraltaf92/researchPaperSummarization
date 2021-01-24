@@ -1,0 +1,4 @@
+ref,citation_5,reference_id
+The computing time is given in terms of CPU time per sentence (on a 450MHz PentiumIIIPC).,2.635799169647515,reference_171
+"Covering the first uncovered position in the source sentence, we use the language model probability p(ej$; $).",2.7853749416847107,reference_111
+The sentence length probability p(JjI) is omitted without any loss in performance.,2.818704091589588,reference_29

@@ -1,0 +1,4 @@
+ref,citation_5,reference_id
+"Lattice parsing (Chappelier et al., 1999) is an alternative to a pipeline that prevents cascading errors by placing all segmentation options into the parse chart.",2.939660316102577,reference_276
+"However, when grammatical relations like subject and object are evaluated, parsing performance drops considerably (Green et al., 2009).",2.994633552802098,reference_43
+In Figure 4 we show an example of variation between the parsing models.,3.055280885059108,reference_266

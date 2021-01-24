@@ -1,0 +1,4 @@
+ref,citation_1,reference_id
+Each model was able to produce hypotheses for all input sentences.,2.79754709166328,reference_309
+"Nonetheless, parse quality is much lower in the joint model because a lattice is effectively a long sentence.",2.924224743039106,reference_303
+"Fourth, we show how to build better models for three different parsers.",2.951512709841862,reference_4

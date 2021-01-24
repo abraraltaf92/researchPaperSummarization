@@ -1,0 +1,4 @@
+ref,citation_3,reference_id
+One aim of the work is to investigate the quality and performance of models with minimal parameter descriptions.,2.791656035378439,reference_27
+"In practice, models have been limited to second-order, and smoothing methods are normally required to deal with the problem of estimation with limited data.",2.9386587268322475,reference_83
+"The ""augmented network"" uniquely models all second-order dependencies of the type determiner -noun - X, and determiner -adjective -X (X ranges over {cl...cn}).",2.9588527442250707,reference_95

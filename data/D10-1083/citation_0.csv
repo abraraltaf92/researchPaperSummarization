@@ -1,4 +1,4 @@
 ref,citation_0,reference_id
 We report results for the best and median hyperparameter settings obtained in this way.,1.509286012038704,reference_182
-reference_183,1.9678823495194664,reference_183
-reference_220,2.075593922072101,reference_220
+"Specifically, for both settings we report results on the median run for each setting.",1.9678823495194664,reference_183
+"Overall, the difference between our most basic model (1TW) and our full model (+FEATS) is 21.2% and 13.1% for the best and median settings respectively.",2.075593922072101,reference_220

@@ -1,0 +1,4 @@
+ref,citation_17,reference_id
+"Section 3 describes the way we divide graphs surrounding ambiguous words into different areas corresponding to different senses, using Markov clustering (van Dongen, 2000).",2.786129026014154,reference_11
+The problem can be addressed by using word sense clustering to attune an existing resource to accurately describe the meanings used in a particular corpus.,2.912148307311384,reference_95
+"Usually, one sense of an ambiguous word w is much more frequent than its other senses present in the corpus.",2.9602343575372454,reference_49

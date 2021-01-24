@@ -1,0 +1,4 @@
+ref,citation_7,reference_id
+"The idea behind using LexRank for sentence retrieval is that a system that considers only the similarity between candidate sentences and the inputquery, and not the similarity between the candidatesentences themselves, is likely to miss some important sentences.",2.635792366355394,reference_156
+"Table 9: Top ranked sentences using theLR[0.20,0.95] system on the question �What causedthe Kursk to sink?� answers from the retrieved sentences.",2.6573901949379595,reference_184
+"In this case,the sentences selected by our system would be sentto an answer identification component for furtherprocessing.",2.673008889683837,reference_185

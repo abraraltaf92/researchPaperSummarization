@@ -1,0 +1,4 @@
+ref,citation_11,reference_id
+"∏ t c t ! t The candidate ei that is ranked the highest according to the average rank is taken to be the cor where t is a term in the corpus, ct is the number rect translation and is output.",2.354479731080947,reference_46
+"They combined the two sources of information by weighting the two individual scores, whereas we made use of the average rank for combination.",2.563967210665865,reference_171
+"Finally, the English candidate word with the smallest average rank position and that appears within the top M positions of both ranked lists is the chosen English translation (as described in Section 2).",2.636378065954387,reference_106

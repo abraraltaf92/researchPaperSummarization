@@ -1,0 +1,4 @@
+ref,citation_13,reference_id
+Comparison with state-of-the-art taggers For comparison we consider two unsupervised tag- gers: the HMM with log-linear features of Berg- Kirkpatrick et al.,2.426140898110925,reference_192
+"Another thread of relevant research has explored the use of features in unsupervised POS induction (Smith and Eisner, 2005; Berg-Kirkpatrick et al., 2010; Hasan and Ng, 2009).",2.495382367249422,reference_48
+"In practice, this sparsity constraint is difficult to incorporate in a traditional POS induction system (Me´rialdo, 1994; Johnson, 2007; Gao and Johnson, 2008; Grac¸a et al., 2009; Berg-Kirkpatrick et al., 2010).",2.7904723625644534,reference_12

@@ -1,0 +1,4 @@
+ref,citation_19,reference_id
+"The local graph in step 1 consists of w, the ni neighbours of w and the n9 neighbours of the neighbours of w. Since in each iteration we only attempt to find the ""best"" cluster, it suffices to build a relatively small graph in 1.",2.679438897030462,reference_71
+"Usually, one sense of an ambiguous word w is much more frequent than its other senses present in the corpus.",2.692112628130872,reference_49
+Compute a small local graph Gw around w using the set of features F. If the similarity between w and its closest neighbour is below a fixed threshold go to 6.,2.7172844177186213,reference_60

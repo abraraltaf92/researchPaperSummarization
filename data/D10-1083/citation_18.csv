@@ -1,0 +1,4 @@
+ref,citation_18,reference_id
+"This model admits a simple Gibbs sampling algorithm where the number of latent variables is proportional to the number of word types, rather than the size of a corpus as for a standard HMM sampler (Johnson, 2007).",2.863097574942678,reference_24
+"We experiment with four values for each hyperparameter resulting in 16 (α, β) combinations: α β 0.001, 0.01, 0.1, 1.0 0.01, 0.1, 1.0, 10 Iterations In each run, we performed 30 iterations of Gibbs sampling for the type assignment variables W .4 We use the final sample for evaluation.",2.976003830045057,reference_172
+"Even without features, but still using the tag prior, our median result is 52.0%, still significantly outperforming Grac¸a et al.",2.986482415364067,reference_212

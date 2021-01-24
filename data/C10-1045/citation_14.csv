@@ -1,0 +1,4 @@
+ref,citation_14,reference_id
+"By establishing significantly higher parsing baselines, we have shown that Arabic parsing performance is not as poor as previously thought, but remains much lower than English.",2.343374236488952,reference_311
+We show that noun-noun vs. discourse-level coordination ambiguity in Arabic is a significant source of parsing errors (Table 8c).,2.6983674946217,reference_71
+"A better approach would be to distin guish between these cases, possibly by drawing on the vast linguistic work on Arabic connectives (AlBatal, 1990).",2.7689414261985514,reference_70

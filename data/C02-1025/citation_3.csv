@@ -1,0 +1,4 @@
+ref,citation_3,reference_id
+"For each token , zero, one, or more of the features in each feature group are set to 1.",2.087161259380713,reference_72
+"Local features are features that are based on neighboring tokens, as well as the token itself.",2.121122595501785,reference_61
+Global features are extracted from other occurrences of the same token in the whole document.,2.233077762493071,reference_62

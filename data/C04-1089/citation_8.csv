@@ -1,0 +1,4 @@
+ref,citation_8,reference_id
+We use the Pml (tc | Tc (C (e))) = dT (C (e )) (tc ) ∑dT (C ( e )) (t ) expect ation maxi mizati on (EM) algorit hm to genera te mappi ng proba bilitie s from pinyin syl c t∈Tc (C ( e )) lables to English letter sequences.,2.8951846161578425,reference_61
+"The work of (Fung and Yee, 1998; Rapp, 1995; Rapp, 1999) noted that if an English word e is the translation of a Chinese word c , then the contexts of the two words are similar.",2.986805345039126,reference_23
+"If a word e in English is indeed the translation of a word c in Chinese, then we would expect e to be ranked very high in both lists in general.",2.9885692557757224,reference_40

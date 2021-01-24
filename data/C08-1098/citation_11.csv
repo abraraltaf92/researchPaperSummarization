@@ -1,0 +1,4 @@
+ref,citation_11,reference_id
+"Apparently, the lexical features used by the SVMTool encode most of the information of the tagset refinement.",2.427476841854668,reference_160
+"It is annotated with POS tags from the coarse-grained STTS tagset and with additional features encoding information about number, gender, case, person, degree, tense, and mood.",2.670093394995317,reference_126
+The best tag sequence is computed with the Viterbi algorithm.,2.706120341481685,reference_107

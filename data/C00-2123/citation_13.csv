@@ -1,0 +1,4 @@
+ref,citation_13,reference_id
+"Using these states, we define partial hypothesis extensions, which are of the following type: (S0;C n fjg; j0) !",2.467596758449234,reference_105
+"Future extensions of the system might include: 1) An extended translation model, where we use more context to predict a source word.",2.6005404637950664,reference_194
+"Only one of the first n positions which are not already aligned in a partial hypothesis may be chosen, where n is set to 4.",2.7978017532811865,reference_128

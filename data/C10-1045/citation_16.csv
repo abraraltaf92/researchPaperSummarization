@@ -1,0 +1,4 @@
+ref,citation_16,reference_id
+"The Penn Arabic Treebank (ATB) syntactic guidelines (Maamouri et al., 2004) were purposefully borrowed without major modification from English (Marcus et al., 1993).",2.528120731850842,reference_11
+"We compare the manually annotated grammar, which we incorporate into the Stanford parser, to both the Berkeley (Petrov et al., 2006) and Bikel (Bikel, 2004) parsers.",2.8956779247982745,reference_149
+Modifying the Berkeley parser for Arabic is straightforward.,3.0058775560051725,reference_246

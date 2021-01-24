@@ -1,0 +1,44 @@
+In this paper, we describe a search procedure for statistical machine translation (MT) based on dynamic programming (DP).
+The experimental tests are carried out on the Verbmobil task (GermanEnglish, 8000-word vocabulary), which is a limited-domain spoken-language task.
+The model is often further restricted so that each source word is assigned to exactly one target word (Brown et al., 1993; Ney et al., 2000).
+In Section 3, we introduce our novel concept to word reordering and a DP-based search, which is especially suitable for the translation direction from German to English.
+This approach is compared to another reordering scheme presented in (Berger et al., 1996).
+In Section 4, we present the performance measures used and give translation results on the Verbmobil task.
+For the translation model Pr(fJ 1 jeI 1), we go on the assumption that each source word is aligned to exactly one target word.
+The alignment model uses two kinds of parameters: alignment probabilities p(aj jaj􀀀1; I; J), where the probability of alignment aj for position j depends on the previous alignment position aj􀀀1 (Ney et al., 2000) and lexicon probabilities p(fj jeaj ).
+To explicitly handle the word reordering between words in source and target language, we use the concept of the so-called inverted alignments as given in (Ney et al., 2000).
+The inverted alignment probability p(bijbi􀀀1; I; J) and the lexicon probability p(fbi jei) are obtained by relative frequency estimates from the Viterbi alignment path after the final training iteration.
+The sentence length probability p(JjI) is omitted without any loss in performance.
+We use a solution to this problem similar to the one presented in (Och et al., 1999), where target words are joined during training.
+An extended lexicon model is defined, and its likelihood is compared to a baseline lexicon model, which takes only single-word dependencies into account.
+E.g. when 'Zahnarzttermin' is aligned to dentist's, the extended lexicon model might learn that 'Zahnarzttermin' actuallyhas to be aligned to both dentist's and ap pointment.
+The resulting algorithm has a complexity of O(n!).
+The algorithm works due to the fact that not all permutations of cities have to be considered explicitly.
+6.
+Restrictions: Quasi-monotone Search The above search space is still too large to allow the translation of a medium length input sentence.
+(f1; ;mg n fl1g ; l) 3 (f1; ;mg n fl; l1; l2g ; l0) !
+Skipped (K): The translation of up to one word may be postponed . Verb (V): The translation of up to two words may be anticipated.
+A position is presented by the word at that position.
+Using these states, we define partial hypothesis extensions, which are of the following type: (S0;C n fjg; j0) !
+Covering the first uncovered position in the source sentence, we use the language model probability p(ej$; $).
+The search starts in the hypothesis (I; f;g; 0).
+f1; ; Jg denotes a coverage set including all positions from the starting position 1 to position J and j 2 fJ 􀀀L; ; Jg.
+The complexity of the quasimonotone search is O(E3 J (R2+LR)).
+Restrictions We compare our new approach with the word reordering used in the IBM translation approach (Berger et al., 1996).
+A procedural definition to restrict1In the approach described in (Berger et al., 1996), a mor phological analysis is carried out and word morphemes rather than full-form words are used during the search.
+Here, we process only full-form words within the translation procedure.
+Only one of the first n positions which are not already aligned in a partial hypothesis may be chosen, where n is set to 4.
+This approach leads to a search procedure with complexity O(E3 J4).
+The following two error criteria are used in our experiments: mWER: multi-reference WER: We use the Levenshtein distance between the automatic translation and several reference translations as a measure of the translation errors.
+On average, 6 reference translations per automatic translation are available.
+We apply a beam search concept as in speech recognition.
+Table 4 shows translation results for the three approaches.
+The computing time is given in terms of CPU time per sentence (on a 450MHz PentiumIIIPC).
+The quasi-monotone search performs best in terms of both error rates mWER and SSER.
+The effect of the pruning threshold t0 is shown in Table 5.
+Depending on the threshold t0, the search algorithm may miss the globally optimal path which typically results in additional translation errors.
+Table 5: Effect of the beam threshold on the number of search errors (147 sentences).
+In the second and third translation examples, the IbmS word reordering performs worse than the QmS word reordering, since it can not take properly into account the word reordering due to the German verbgroup.
+In the last example, the less restrictive IbmS word reordering leads to a better translation, although the QmS translation is still acceptable.
+In this paper, we have presented a new, eÆcient DP-based search procedure for statistical machine translation.
+Future extensions of the system might include: 1) An extended translation model, where we use more context to predict a source word.

@@ -1,0 +1,4 @@
+ref,citation_10,reference_id
+"If is one of Monday, Tuesday, . . .",3.1397756297189,reference_112
+At most one feature in this group will be set to 1.,3.248874225437355,reference_91
+"Same for . In the case where the next token is a hyphen, then is also used as a feature: (init- Caps, ) is set to 1.",3.280974552394938,reference_95

@@ -1,0 +1,4 @@
+ref,citation_15,reference_id
+We can first use a named entity recognizer and noun phrase chunker to extract English names and noun phrases.,3.0006896025224234,reference_140
+They attempted to improve named entity translation by combining phonetic and semantic information.,3.1250848294122027,reference_168
+Each of the two individual methods provides a P(Q | D) is the one that best matches the query.,3.203530277597401,reference_38

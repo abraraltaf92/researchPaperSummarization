@@ -1,0 +1,4 @@
+ref,citation_9,reference_id
+"If all three sentences are in the same document, then even a human will find it difficult to classify McCann in (1) into either person or organization, unless there is some other information provided.",2.41255239677524,reference_134
+"As far as we know, no other NERs have used information from the whole document (global) as well as information within the same sentence (local) in one framework.",2.6296195061206413,reference_11
+"If is one of Monday, Tuesday, . . .",2.678194610487117,reference_112

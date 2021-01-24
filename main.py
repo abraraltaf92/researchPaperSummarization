@@ -13,9 +13,9 @@ def result(ref,cit,f_name):
     top_3(ref, f_name)       # top 3 citation - reference pair
     imp_sent(f_name)
 for root, dirs , files in os.walk(path,topdown=False):
-    print(f" directory : {root}")
+    # print(f" directory : {root}")
     dirs = root.split('/')
-    print(f" dirName 1 : {dirs[0]}")
+    # print(f" dirName 1 : {dirs[0]}")
     if(len(dirs)==2):
         files = dirs[1].split('_')
         cp = 'data/' + files[0] + '/' + files[0] + '.annv3_parsed_data.csv'

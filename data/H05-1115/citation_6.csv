@@ -1,0 +1,4 @@
+ref,citation_6,reference_id
+There areedges between nodes for which the cosine similarity between the respective pair of sentences exceedsa given threshold.,2.286248747250655,reference_47
+"Therefore, sentences that contain the most salient information in the document set should be very centralwithin the graph.Figure 2 shows an example of a similarity graph for a set of five input sentences, using a cosine similarity threshold of 0.15.",2.7686016526606188,reference_49
+"With probability (1-d), a transitionis made to the nodes that are lexically similar to thecurrent node.",2.78130274871306,reference_78

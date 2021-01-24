@@ -1,0 +1,4 @@
+ref,citation_15,reference_id
+We show that noun-noun vs. discourse-level coordination ambiguity in Arabic is a significant source of parsing errors (Table 8c).,2.527543866738029,reference_71
+"Table 9 shows that MADA produces a high quality segmentation, and that the effect of cascading segmentation errors on parsing is only 1.92% F1.",2.5969852530563777,reference_300
+"By establishing significantly higher parsing baselines, we have shown that Arabic parsing performance is not as poor as previously thought, but remains much lower than English.",2.634499181851881,reference_311

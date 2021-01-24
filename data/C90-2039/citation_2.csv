@@ -1,0 +1,4 @@
+ref,citation_2,reference_id
+"In such cases, application of the EFF strategy, that is, treating features tending to fall in unification first, reduces unnecessary computation when the unification finally fails.",2.573326148762985,reference_180
+"Method In a system where FS unification is applied, there are features whose values fail relatively often in unification with other values and there are features whose values do not fail so often.",2.599597822907925,reference_178
+"(2) Number of features FSs have: if each FS has only a small number of features, the efficiency gain from the SING unification method is small.",2.6123533227868085,reference_195

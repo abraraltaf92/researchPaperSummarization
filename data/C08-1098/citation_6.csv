@@ -1,0 +1,4 @@
+ref,citation_6,reference_id
+"Since German is a verb-final language, these tests clearly make sense.",3.2017358969764715,reference_173
+"For languages with a rich morphology such as German or Czech, more fine-grained tagsets are often considered more appropriate.",3.220377141011169,reference_5
+"In experiments with German and Czech corpora, this method achieved a higher tagging accuracy than two state-of-the-art general-purpose POS taggers (TnT and SVMTool).",3.269823623741237,reference_224

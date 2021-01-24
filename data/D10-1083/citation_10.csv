@@ -1,0 +1,4 @@
+ref,citation_10,reference_id
+We train and test on the CoNLL-X training set.,2.2876080585579337,reference_165
+See Section 5.,2.600615846146181,reference_160
+"In our work, we demonstrate that using a simple na¨ıveBayes approach also yields substantial performance gains, without the associated training complexity.",2.840465384735781,reference_50

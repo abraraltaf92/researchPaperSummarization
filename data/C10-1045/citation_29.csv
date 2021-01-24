@@ -1,0 +1,4 @@
+ref,citation_29,reference_id
+"However, when grammatical relations like subject and object are evaluated, parsing performance drops considerably (Green et al., 2009).",2.702859400294003,reference_43
+"Finally, we provide a realistic eval uation in which segmentation is performed both in a pipeline and jointly with parsing (§6).",2.756122025006964,reference_23
+"Recently, lattices have been used successfully in the parsing of Hebrew (Tsarfaty, 2006; Cohen and Smith, 2007), a Semitic language with similar properties to Arabic.",2.8300449720727565,reference_277

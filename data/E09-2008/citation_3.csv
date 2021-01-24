@@ -1,0 +1,4 @@
+ref,citation_3,reference_id
+"The compiler allows users to specify finite-state automata and transducers incrementally in a similar fashion to AT&T’s fsm (Mohri et al., 1997) and Lextools (Sproat, 2003), the Xerox/PARC finite- state toolkit (Beesley and Karttunen, 2003) and the SFST toolkit (Schmid, 2005).",2.7297996692503146,reference_5
+"However, this on-the-fly minimization and determinization can be relaxed, and a Thompson construction method chosen in the interface so that automata remain non-deterministic and non- minimized whenever possible—non-deterministic automata naturally being easier to inspect and analyze.",2.921676077875298,reference_46
+"Table 2 shows a comparison with some existing toolkits that build deterministic, minimized automata/transducers.",3.024749099707692,reference_49

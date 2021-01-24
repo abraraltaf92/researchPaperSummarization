@@ -1,0 +1,4 @@
+ref,citation_20,reference_id
+"We use a solution to this problem similar to the one presented in (Och et al., 1999), where target words are joined during training.",3.081449364505434,reference_32
+"The alignment model uses two kinds of parameters: alignment probabilities p(aj jaj􀀀1; I; J), where the probability of alignment aj for position j depends on the previous alignment position aj􀀀1 (Ney et al., 2000) and lexicon probabilities p(fj jeaj ).",3.1475438459716885,reference_20
+"A procedural definition to restrict1In the approach described in (Berger et al., 1996), a mor phological analysis is carried out and word morphemes rather than full-form words are used during the search.",3.19009876207264,reference_124

@@ -1,0 +1,4 @@
+ref,citation_12,reference_id
+We start with noun features since written Arabic contains a very high proportion of NPs.,2.6139054992731685,reference_116
+We can use the preceding linguistic and annotation insights to build a manually annotated Arabic grammar in the manner of Klein and Manning (2003).,2.7520546273402853,reference_112
+The Stanford parser includes both the manually annotated grammar (§4) and an Arabic unknown word model with the following lexical features: 1.,2.922339570756402,reference_239

@@ -1,0 +1,4 @@
+ref,citation_5,reference_id
+"In this paper, we proposed a new method to mine new word translations from comparable corpora, by combining context and transliteration information, which are complementary sources of information.",1.9807457775665784,reference_172
+"For a Chinese source word occurring within a half- month period p, we looked for its English translation candidate words occurring in news documents in the same period p. 5.3 Translation candidates.",2.3341834850608065,reference_84
+"In this paper, we propose a new approach for the task of mining new word translations from comparable corpora, by combining both context and transliteration information.",2.3396194533019354,reference_16

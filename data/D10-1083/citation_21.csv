@@ -1,0 +1,4 @@
+ref,citation_21,reference_id
+Part-of-speech (POS) tag distributions are known to exhibit sparsity — a word is likely to take a single predominant tag in a corpus.,inf,reference_0
+"For each cell, the first row corresponds to the result using the best hyperparameter choice, where best is defined by the 11 metric.",inf,reference_156
+The second row represents the performance of the median hyperparameter setting.,inf,reference_157

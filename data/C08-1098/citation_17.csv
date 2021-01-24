@@ -1,0 +1,4 @@
+ref,citation_17,reference_id
+"In order to provide the tagger with some information about the case of prepositions, a second training corpus was created in which prepositions which always select the same case, such as durch (through), were annotated with this case (APPR.Acc).",2.9283528521752635,reference_138
+"3 We also experimented with a pruning criterion based on binomial tests, which returned smaller trees with a slightly lower accuracy, although the difference in accuracy was never larger than 0.1% for any context size.",2.971113749398817,reference_82
+"Our tagger generates a predictor for each feature (such as base POS, number, gender etc.) Instead of using a single tree for the prediction of all possible values of a feature (such as noun, article, etc. for base POS), the tagger builds a separate decision tree for each value.",2.9898429040118897,reference_58

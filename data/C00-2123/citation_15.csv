@@ -1,0 +1,4 @@
+ref,citation_15,reference_id
+The inverted alignment probability p(bijbi􀀀1; I; J) and the lexicon probability p(fbi jei) are obtained by relative frequency estimates from the Viterbi alignment path after the final training iteration.,3.054649843908157,reference_27
+"E.g. when 'Zahnarzttermin' is aligned to dentist's, the extended lexicon model might learn that 'Zahnarzttermin' actuallyhas to be aligned to both dentist's and ap pointment.",3.103740642164896,reference_35
+"An extended lexicon model is defined, and its likelihood is compared to a baseline lexicon model, which takes only single-word dependencies into account.",3.1474291765321136,reference_34

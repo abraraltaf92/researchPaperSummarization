@@ -1,0 +1,4 @@
+ref,citation_1,reference_id
+"For the translation model Pr(fJ 1 jeI 1), we go on the assumption that each source word is aligned to exactly one target word.",2.813723325130601,reference_19
+"To explicitly handle the word reordering between words in source and target language, we use the concept of the so-called inverted alignments as given in (Ney et al., 2000).",2.869574233417179,reference_24
+"Depending on the threshold t0, the search algorithm may miss the globally optimal path which typically results in additional translation errors.",2.995696051067198,reference_183

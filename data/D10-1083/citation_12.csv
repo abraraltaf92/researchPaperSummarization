@@ -1,0 +1,4 @@
+ref,citation_12,reference_id
+"In practice, this sparsity constraint is difficult to incorporate in a traditional POS induction system (Me´rialdo, 1994; Johnson, 2007; Gao and Johnson, 2008; Grac¸a et al., 2009; Berg-Kirkpatrick et al., 2010).",2.2354268742691508,reference_12
+"Another thread of relevant research has explored the use of features in unsupervised POS induction (Smith and Eisner, 2005; Berg-Kirkpatrick et al., 2010; Hasan and Ng, 2009).",2.760586062538589,reference_48
+While possible to utilize the feature-based log-linear approach described in Berg-Kirkpatrick et al.,2.811516318459511,reference_89

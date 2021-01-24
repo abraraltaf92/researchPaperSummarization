@@ -1,0 +1,4 @@
+ref,citation_20,reference_id
+"Lexicon Feature of Previous and Next Token: The string of the previous token and the next token is used with the initCaps information of . If has initCaps, then a feature (initCaps, ) is set to 1.",2.335153106134608,reference_93
+"Same for . In the case where the next token is a hyphen, then is also used as a feature: (init- Caps, ) is set to 1.",2.4703191881646736,reference_95
+"For each token , zero, one, or more of the features in each feature group are set to 1.",2.4834430673322907,reference_72

@@ -1,0 +1,4 @@
+ref,citation_3,reference_id
+The resulting algorithm has a complexity of O(n!).,2.561985578729543,reference_41
+The complexity of the quasimonotone search is O(E3 J (R2+LR)).,2.93373140108861,reference_118
+This approach leads to a search procedure with complexity O(E3 J4).,3.2921587135353088,reference_138

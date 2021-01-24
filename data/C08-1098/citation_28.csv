@@ -1,0 +1,4 @@
+ref,citation_28,reference_id
+"Unlike him, we found that our tagging method outperformed state-of-the-art POS taggers on fine-grained POS tagging even if only a trigram context was used.",3.196270858861472,reference_210
+We present a HMM part-of-speech tagging method which is particularly suited for POS tagsets with a large number of fine-grained tags.,3.198738066614044,reference_0
+A hybrid system based on four different tagging methods reached an accuracy of 95.68%.,3.199549298459055,reference_219

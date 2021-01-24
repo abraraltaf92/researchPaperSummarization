@@ -1,0 +1,4 @@
+ref,citation_24,reference_id
+"Conditioned on T , features of word types W are drawn.",1.826533082316222,reference_55
+"Once HMM parameters (θ, φ) are drawn, a token-level tag and word sequence, (t, w), is generated in the standard HMM fashion: a tag sequence t is generated from φ.",2.193643134106303,reference_59
+The type-level tag assignments T generate features associated with word types W . The tag assignments constrain the HMM emission parameters θ.,2.208301857220311,reference_75

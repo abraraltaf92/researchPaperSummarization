@@ -1,0 +1,4 @@
+ref,citation_11,reference_id
+"Lexicon Feature of Previous and Next Token: The string of the previous token and the next token is used with the initCaps information of . If has initCaps, then a feature (initCaps, ) is set to 1.",2.603766631056428,reference_93
+"The secondary classifier in (Borthwick, 1999) uses information not just from the current article, but also from the whole test corpus, with an additional feature that indicates if the information comes from the same document or from another document.",2.608651250583716,reference_188
+(1998) did make use of information from the whole document.,2.699249991338053,reference_26

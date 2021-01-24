@@ -1,0 +1,4 @@
+ref,citation_2,reference_id
+"The first 80% were used as training data, the first half of the rest as development data, and the last 10% as test data.",2.8616965838475013,reference_128
+"Thus, pre-pruning with a threshold of 6 was used in the experiments.",2.908989170518609,reference_87
+The additional information may also help to disambiguate the (base) part of speech.,2.974497219170216,reference_6

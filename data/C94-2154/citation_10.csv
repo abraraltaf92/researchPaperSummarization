@@ -1,0 +1,4 @@
+ref,citation_10,reference_id
+"well-typable iff the feature structure subsumes a well-typed feature structure, in ALl.:, type infereneing is employed to ensure that all feature structures are well-typable--in fact, all feature structures are well typed.",2.513936355444186,reference_61
+"It would, of course, not be very efficient to work with such large disjunctions of feature structures.",2.51814191071691,reference_83
+"By contrast, the Troll system described in this paper has an etfeetive algorithm f<>r deciding well-formedness, which is based on the idea of efficiently representing disjunctive possibilities within the feature structure, Call a well-typed feature structure in which all nodes are labelled with species a resolved feature structure and call a set of resolved feature structures that have the same underlying graph (that is, they differ only in their node labellings) a disjunctive resolved feature structure.",2.5317319351509995,reference_66

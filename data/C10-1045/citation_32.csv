@@ -1,0 +1,4 @@
+ref,citation_32,reference_id
+"However, when grammatical relations like subject and object are evaluated, parsing performance drops considerably (Green et al., 2009).",3.1156457760097105,reference_43
+Our results suggest that current parsing models would benefit from better annotation consistency and enriched annotation in certain syntactic configurations.,3.1257657541265145,reference_314
+"Test set OOV rate is computed using the following splits: ATB (Chiang et al., 2006); CTB6 (Huang and Harper, 2009); Negra (Dubey and Keller, 2003); English, sections 221 (train) and section 23 (test).",3.1356475477235355,reference_65

@@ -1,0 +1,4 @@
+ref,citation_6,reference_id
+both MENE and IdentiFinder used more training data than we did (we used only the official MUC 6 and MUC7 training data).,2.4728964862845118,reference_37
+"As can be seen in Table 4, our training data is a lot less than those used by MENE and IdentiFinder3.",2.495877839194298,reference_168
+"Same for . In the case where the next token is a hyphen, then is also used as a feature: (init- Caps, ) is set to 1.",2.6375249651066164,reference_95

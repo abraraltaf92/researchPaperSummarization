@@ -1,0 +1,4 @@
+ref,citation_2,reference_id
+"These methods demonstrated the benefits of incorporating linguistic features using a log-linear parameterization, but requires elaborate machinery for training.",3.038510194246501,reference_49
+"For each cell, the first row corresponds to the result using the best hyperparameter choice, where best is defined by the 11 metric.",3.041158873177098,reference_156
+"In contrast, NNP (proper nouns) form a large portion of vocabulary.",3.0767724731686243,reference_87

@@ -1,0 +1,4 @@
+ref,citation_10,reference_id
+"The work that is most similar to ours is the recent research of (Huang et al., 2004).",2.806510104012394,reference_167
+"On the other hand, using our method of combining both sources of information and setting M = ∞, 19 Chinese words (i.e., the first 22 Chinese words in Table 3 except 巴佐亚,坩埚,普利法) have their correct English translations at rank one position.",3.6081895190933366,reference_158
+"In this paper, we propose a new approach for the task of mining new word translations from comparable corpora, by combining both context and transliteration information.",3.654456552744156,reference_16

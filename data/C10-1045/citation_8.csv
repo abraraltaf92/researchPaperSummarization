@@ -1,0 +1,4 @@
+ref,citation_8,reference_id
+"(2009b) evaluated the Bikel parser using the same ATB split, but only reported dev set results with gold POS tags for sentences of length ≤ 40.",2.900720566929816,reference_224
+"Moreover, they are used as substantives much 2 Unlike machine translation, constituency parsing is not significantly affected by variable word order.",2.9298794153354697,reference_42
+"Despite their simplicity, uni- gram weights have been shown as an effective feature in segmentation models (Dyer, 2009).13 The joint parser/segmenter is compared to a pipeline that uses MADA (v3.0), a state-of-the-art Arabic segmenter, configured to replicate ATB segmentation (Habash and Rambow, 2005).",2.9306016219405344,reference_284

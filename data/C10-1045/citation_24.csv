@@ -1,0 +1,4 @@
+ref,citation_24,reference_id
+Modifying the Berkeley parser for Arabic is straightforward.,2.042141766675854,reference_246
+"Because the Bikel parser has been parameter- ized for Arabic by the LDC, we do not change the default model settings.",2.462824425748178,reference_249
+"To our knowledge, ours is the first analysis of this kind for Arabic parsing.",2.741319617145681,reference_25

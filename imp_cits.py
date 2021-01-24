@@ -20,7 +20,7 @@ def imp_sent(f_name):
     df['reference'] = ref_txt
     df['temp_col'] = [ int(i.lstrip('reference_'))for i in ref_id]
     df.sort_values(['temp_col'],ascending=True,inplace=True)
-    df.drop(["temp"],axis=1,inplace=True)
+    df.drop(["temp_col"],axis=1,inplace=True)
     
     df.to_csv(f_name + '/important_sentences.csv',index=False)
 

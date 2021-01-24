@@ -1,0 +1,4 @@
+ref,citation_16,reference_id
+"Local features are features that are based on neighboring tokens, as well as the token itself.",1.714735226887898,reference_61
+This feature imposes constraints Table 1: Features based on the token string that are based on the probability of each name class during training.,1.9406814083126769,reference_75
+"For each token , zero, one, or more of the features in each feature group are set to 1.",2.01324281007885,reference_72

@@ -1,0 +1,4 @@
+ref,citation_23,reference_id
+In Figure 4 we show an example of variation between the parsing models.,2.827777123782443,reference_266
+"By establishing significantly higher parsing baselines, we have shown that Arabic parsing performance is not as poor as previously thought, but remains much lower than English.",2.8622535943987355,reference_311
+"Evalb, the standard parsing metric, is biased toward such corpora (Sampson and Babarczy, 2003).",2.9224096719509127,reference_79

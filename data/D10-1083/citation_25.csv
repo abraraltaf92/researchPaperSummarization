@@ -1,0 +1,4 @@
+ref,citation_25,reference_id
+"Recent work has made significant progress on unsupervised POS tagging (Me´rialdo, 1994; Smith and Eisner, 2005; Haghighi and Klein, 2006; Johnson,2007; Goldwater and Griffiths, 2007; Gao and John son, 2008; Ravi and Knight, 2009).",2.426893394238738,reference_32
+"Another thread of relevant research has explored the use of features in unsupervised POS induction (Smith and Eisner, 2005; Berg-Kirkpatrick et al., 2010; Hasan and Ng, 2009).",2.7478253152839542,reference_48
+Comparison with state-of-the-art taggers For comparison we consider two unsupervised tag- gers: the HMM with log-linear features of Berg- Kirkpatrick et al.,2.867740068562611,reference_192

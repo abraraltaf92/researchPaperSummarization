@@ -1,0 +1,4 @@
+ref,citation_12,reference_id
+"Therefore, even after removal of the wing-node, the two areas of meaning are still linked via tail.",2.8598106828403056,reference_33
+"However, whereas there are many edges within an area of meaning, there is only a small number of (weak) links between different areas of meaning.",2.9913472009171214,reference_35
+"To detect the different areas of meaning in our local graphs, we use a cluster algorithm for graphs (Markov clustering, MCL) developed by van Dongen (2000).",3.0353071801833376,reference_36

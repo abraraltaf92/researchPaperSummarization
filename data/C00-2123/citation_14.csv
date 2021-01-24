@@ -1,0 +1,4 @@
+ref,citation_14,reference_id
+"In this paper, we describe a search procedure for statistical machine translation (MT) based on dynamic programming (DP).",2.6436373548241106,reference_0
+The complexity of the quasimonotone search is O(E3 J (R2+LR)).,2.8756579846863426,reference_118
+f1; ; Jg denotes a coverage set including all positions from the starting position 1 to position J and j 2 fJ 􀀀L; ; Jg.,2.9217072243387667,reference_116

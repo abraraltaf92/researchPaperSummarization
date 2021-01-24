@@ -1,0 +1,4 @@
+ref,citation_0,reference_id
+"The model is often further restricted so that each source word is assigned to exactly one target word (Brown et al., 1993; Ney et al., 2000).",3.1221310356712606,reference_8
+"This approach is compared to another reordering scheme presented in (Berger et al., 1996).",3.605199668032594,reference_14
+(f1; ;mg n fl1g ; l) 3 (f1; ;mg n fl; l1; l2g ; l0) !,3.629374308354823,reference_87

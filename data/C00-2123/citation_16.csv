@@ -1,0 +1,4 @@
+ref,citation_16,reference_id
+"The model is often further restricted so that each source word is assigned to exactly one target word (Brown et al., 1993; Ney et al., 2000).",3.1351087268827973,reference_8
+"This approach is compared to another reordering scheme presented in (Berger et al., 1996).",3.366184171843631,reference_14
+The algorithm works due to the fact that not all permutations of cities have to be considered explicitly.,3.407027736675722,reference_45

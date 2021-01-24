@@ -1,0 +1,4 @@
+ref,citation_10,reference_id
+"For languages with a rich morphology such as German or Czech, more fine-grained tagsets are often considered more appropriate.",2.941001274867443,reference_5
+"Because of the different corpora used and the different amounts of lexical information available, a direct comparison to our results is difficult.",3.010754169299265,reference_220
+"Apparently, the lexical features used by the SVMTool encode most of the information of the tagset refinement.",3.029836626071948,reference_160

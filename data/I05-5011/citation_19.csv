@@ -1,0 +1,4 @@
+ref,citation_19,reference_id
+"In order to create an IE system for a new domain, one has to spend a long time to create the knowledge.",3.1843794811716237,reference_19
+"Up to now, most IE researchers have been creating paraphrase knowledge (or IE patterns) by hand and for specific tasks.",3.206269723191452,reference_17
+"Also, expanding on the techniques for the automatic generation of extraction patterns (Riloff 96; Sudo 03) using our method, the extraction patterns which have the same meaning can be automatically linked, enabling us to produce the final table fully automatically.",3.217941329763348,reference_201

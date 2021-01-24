@@ -1,0 +1,4 @@
+ref,citation_11,reference_id
+"We appliedall four of these configurations to our unseen development/test data, in order to see if we could furtherdifferentiate their performances.",3.074539936404227,reference_133
+"While LexRank outperforms the baseline system on the first two clusters both in termsof MRR and TRDR, their performances are not substantially different on the third cluster.",3.0782062715894827,reference_141
+"1 0.03614457831325301 At least two people are dead, inclu...",3.079870875044316,reference_63

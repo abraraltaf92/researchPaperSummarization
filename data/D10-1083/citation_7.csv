@@ -1,0 +1,4 @@
+ref,citation_7,reference_id
+"On one end of the spectrum are clustering approaches that assign a single POS tag to each word type (Schutze, 1995; Lamar et al., 2010).",2.5036528002256677,reference_36
+"The model starts by generating a tag assignment for each word type in a vocabulary, assuming one tag per word.",2.676296438234037,reference_19
+"In this work, we take a more direct approach and treat a word type and its allowed POS tags as a primary element of the model.",2.6860621573995065,reference_18

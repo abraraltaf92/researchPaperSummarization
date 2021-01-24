@@ -1,0 +1,4 @@
+ref,citation_19,reference_id
+"The Penn Arabic Treebank (ATB) syntactic guidelines (Maamouri et al., 2004) were purposefully borrowed without major modification from English (Marcus et al., 1993).",2.8281239967697136,reference_11
+"Test set OOV rate is computed using the following splits: ATB (Chiang et al., 2006); CTB6 (Huang and Harper, 2009); Negra (Dubey and Keller, 2003); English, sections 221 (train) and section 23 (test).",2.9065675529396,reference_65
+"However, when grammatical relations like subject and object are evaluated, parsing performance drops considerably (Green et al., 2009).",3.0020421128470134,reference_43

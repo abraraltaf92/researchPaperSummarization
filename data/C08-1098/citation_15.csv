@@ -1,0 +1,4 @@
+ref,citation_15,reference_id
+All context attributes other than the base POS are always used in combination with the base POS.,2.59852356893301,reference_66
+The additional information may also help to disambiguate the (base) part of speech.,2.602431539926896,reference_6
+We present a HMM part-of-speech tagging method which is particularly suited for POS tagsets with a large number of fine-grained tags.,2.716847461263252,reference_0

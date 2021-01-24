@@ -1,0 +1,4 @@
+ref,citation_10,reference_id
+Japanese analysis system based on llPSG[Kogure 891 uses 90% - 98% of the elapsed time in FS unification.,2.1692194134363336,reference_13
+"That is, the SING unification method applied in an analysis system uses the failure tendency information acquired by a learning analysis process.",2.692451648802607,reference_186
+"One, called the lazy incremental copy graph unification method, achieves structure sharing with constant order data access time which reduces the cequired memory.",2.7956728382449563,reference_1

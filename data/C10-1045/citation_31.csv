@@ -1,0 +1,4 @@
+ref,citation_31,reference_id
+"By establishing significantly higher parsing baselines, we have shown that Arabic parsing performance is not as poor as previously thought, but remains much lower than English.",3.069749796301902,reference_311
+"4 Traditional Arabic linguistic theory treats both of these types as subcategories of noun � '.i . Figure 1: The Stanford parser (Klein and Manning, 2002) is unable to recover the verbal reading of the unvocalized surface form 0 an (Table 1).",3.100384047674599,reference_48
+The Stanford parser includes both the manually annotated grammar (§4) and an Arabic unknown word model with the following lexical features: 1.,3.140289608985186,reference_239

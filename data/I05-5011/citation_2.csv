@@ -1,0 +1,4 @@
+ref,citation_2,reference_id
+"For example, in Information Retrieval (IR), we have to match a user’s query to the expressions in the desired documents, while in Question Answering (QA), we have to find the answer to the user’s question even if the formulation of the answer in the document is different from the question.",2.446476666833693,reference_12
+"While there are other obstacles to completing this idea, we believe automatic paraphrase discovery is an important component for building a fully automatic information extraction system.",2.920156682927078,reference_202
+"Also, we don’t know how many such paraphrase sets are necessary to cover even some everyday things or events.",2.965950523171826,reference_16

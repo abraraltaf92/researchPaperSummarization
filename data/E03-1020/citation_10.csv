@@ -1,0 +1,4 @@
+ref,citation_10,reference_id
+"The same corpus evidence which supports a clustering of an ambiguous word into distinct senses can be used to decide which sense is referred to in a given context (Schiitze, 1998).",2.5526428674226818,reference_8
+The word sense clustering algorithm as outlined below can be applied to any kind of similarity measure based on any set of features.,2.6534346146871397,reference_21
+"Usually, one sense of an ambiguous word w is much more frequent than its other senses present in the corpus.",2.6534540608250814,reference_49

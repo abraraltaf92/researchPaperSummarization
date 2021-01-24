@@ -1,0 +1,4 @@
+ref,citation_17,reference_id
+ENDPROCEDURE Figure 7: The revised CopyNode procedure has the disadvantage of treating copy dependency information.,2.1551292374100584,reference_174
+The LING unification procedure uses a revised CopyNode procedure which does not copy structures immediately.,2.273407422163368,reference_144
+The revised procedure uses a newly introduced slot COPY-DEPENDENCY.,2.5110365563349117,reference_145

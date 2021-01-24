@@ -1,0 +1,4 @@
+ref,citation_18,reference_id
+"The secondary classifier in (Borthwick, 1999) uses information not just from the current article, but also from the whole test corpus, with an additional feature that indicates if the information comes from the same document or from another document.",2.0537480827107237,reference_188
+"As far as we know, no other NERs have used information from the whole document (global) as well as information within the same sentence (local) in one framework.",2.329032059391208,reference_11
+"Another attempt at using global information can be found in (Borthwick, 1999).",2.35692711768113,reference_28

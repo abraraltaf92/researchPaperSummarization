@@ -1,0 +1,4 @@
+ref,citation_2,reference_id
+fsm_match_result *result; 4.,3.268905080681778,reference_36
+"The Foma API gives access to basic functions, such as constructing a finite-state machine from a regular expression provided as a string, performing a transduction, and exhaustively matching against a given string starting from every position.",3.337795266918828,reference_32
+These may be useful for someone wanting to build a separate GUI or interface using just the existing low- level functions.,3.343100047476108,reference_12

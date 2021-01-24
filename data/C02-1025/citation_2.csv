@@ -1,0 +1,4 @@
+ref,citation_2,reference_id
+The probability of the classes assigned to the words in a sentence in a document is defined as follows: where is determined by the maximum entropy classifier.,2.22445308247573,reference_58
+It uses a maximum entropy framework and classifies each word given its features.,2.6719532907775667,reference_42
+The baseline system in Table 3 refers to the maximum entropy system that uses only local features.,2.6872848755854557,reference_158

@@ -1,0 +1,24 @@
+reference_id,reference
+reference_6,"Recent work has motivated the need for systemsthat support �Information Synthesis� tasks, in whicha user seeks a global understanding of a topic orstory (Amigo et al., 2004)."
+reference_15,"Currently, we address the question-focused sentence retrieval task."
+reference_17,"(Robertson et al.,1992; Salton et al., 1993)), it remains important andyet often overlooked."
+reference_24,(7:6) Figure 1: Question tracking interface to a summarization system.
+reference_47,There areedges between nodes for which the cosine similarity between the respective pair of sentences exceedsa given threshold.
+reference_49,"Therefore, sentences that contain the most salient information in the document set should be very centralwithin the graph.Figure 2 shows an example of a similarity graph for a set of five input sentences, using a cosine similarity threshold of 0.15."
+reference_52,"Below,we describe a topic-sensitive version of LexRank,which is more appropriate for the question-focusedsentence retrieval problem."
+reference_53,"In the new approach, the 916 score of a sentence is determined by a mixture modelof the relevance of the sentence to the query and thesimilarity of the sentence to other high-scoring sentences."
+reference_57,"Then the relevance of a sentence s tothe question q is computed by: rel(s|q) =Xw?q log(tfw,s + 1)� log(tfw,q + 1) � idfw (2) where tfw,s and tfw,q are the number of times wappears in s and q, respectively."
+reference_58,"This model hasproven to be successful in query-based sentence retrieval (Allan et al., 2003), and is used as our competitive baseline in this study (e.g. Tables 4, 5 and7)."
+reference_63,"1 0.03614457831325301 At least two people are dead, inclu..."
+reference_74,Such a matrix is called stochasticand defines a Markov chain.
+reference_78,"With probability (1-d), a transitionis made to the nodes that are lexically similar to thecurrent node."
+reference_82,"It was also the model used torank sentences in (Erkan and Radev, 2004)."
+reference_95,"A non-ergodic Markov chain can bemade ergodic by reserving a small probability for jumping toany other state from the current state (Page et al., 1998)."
+reference_98,�Newstracker� clusters were collected automatically by our Web-based news summarization system.
+reference_102,"For each sentence and question pair in a givencluster, the judges were asked to indicate whetheror not the sentence contained a complete answerto the question."
+reference_133,"We appliedall four of these configurations to our unseen development/test data, in order to see if we could furtherdifferentiate their performances."
+reference_141,"While LexRank outperforms the baseline system on the first two clusters both in termsof MRR and TRDR, their performances are not substantially different on the third cluster."
+reference_156,"The idea behind using LexRank for sentence retrieval is that a system that considers only the similarity between candidate sentences and the inputquery, and not the similarity between the candidatesentences themselves, is likely to miss some important sentences."
+reference_184,"Table 9: Top ranked sentences using theLR[0.20,0.95] system on the question �What causedthe Kursk to sink?� answers from the retrieved sentences."
+reference_185,"In this case,the sentences selected by our system would be sentto an answer identification component for furtherprocessing."
+reference_186,"As discussed in Section 2, our goal wasto develop a topic-sensitive version of LexRank andto use it to improve a baseline system, which hadpreviously been used successfully for query-basedsentence retrieval (Allan et al., 2003)."

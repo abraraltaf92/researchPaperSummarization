@@ -1,0 +1,4 @@
+ref,citation_20,reference_id
+"Note that only the words, but not the POS tags from the test and development data were used, here.",2.280302259970949,reference_132
+Results for 2 and for 10 preceding POS tags as context are reported for our tagger.,2.4205336232394905,reference_148
+The first attribute of a POS tag is the main category.,2.446141457940984,reference_89

@@ -1,0 +1,4 @@
+ref,citation_21,reference_id
+"As can be seen in the example, the first two phrases have a different order of NE names from the last two, so we can determine that the last two phrases represent a reversed relation.",2.935559568554454,reference_76
+"In order to create an IE system for a new domain, one has to spend a long time to create the knowledge.",2.981364234590049,reference_19
+Another approach to finding paraphrases is to find phrases which take similar subjects and objects in large corpora by using mutual information of word distribution [Lin and Pantel 01].,3.03246765541275,reference_166

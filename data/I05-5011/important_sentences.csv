@@ -1,0 +1,36 @@
+reference_id,reference
+reference_0,Automatic paraphrase discovery is an important but challenging task.
+reference_2,"We focus on phrases which connect two Named Entities (NEs), and proceed in two stages."
+reference_9,"There has been a lot of research on such lexical relations, along with the creation of resources such as WordNet."
+reference_12,"For example, in Information Retrieval (IR), we have to match a user’s query to the expressions in the desired documents, while in Question Answering (QA), we have to find the answer to the user’s question even if the formulation of the answer in the document is different from the question."
+reference_16,"Also, we don’t know how many such paraphrase sets are necessary to cover even some everyday things or events."
+reference_17,"Up to now, most IE researchers have been creating paraphrase knowledge (or IE patterns) by hand and for specific tasks."
+reference_19,"In order to create an IE system for a new domain, one has to spend a long time to create the knowledge."
+reference_20,"So, it is too costly to make IE technology “open- domain” or “on-demand” like IR or QA."
+reference_22,"We are focusing on phrases which have two Named Entities (NEs), as those types of phrases are very important for IE applications."
+reference_23,"After tagging a large corpus with an automatic NE tagger, the method tries to find sets of paraphrases automatically without being given a seed phrase or any kinds of cue."
+reference_39,The NE tagger is a rule-based system with 140 NE categories [Sekine et al. 2004].
+reference_76,"As can be seen in the example, the first two phrases have a different order of NE names from the last two, so we can determine that the last two phrases represent a reversed relation."
+reference_110,buy - acquire (5) buy - agree (2) buy - purchase (5) buy - acquisition (7) buy - pay (2)* buy - buyout (3) buy - bid (2) acquire - purchase (2) acquire - acquisition (2) acquire - pay (2)* purchase - acquisition (4) purchase - stake (2)* acquisition - stake (2)* unit - subsidiary (2) unit - parent (5) It is clear that these links form two clusters which are mostly correct.
+reference_128,"The results, along with the total number of phrases, are shown in Table 1."
+reference_129,D o m ai n # of ph ras es t o t a l p h r a s e s ac cu ra cy C C 7 o r m o r e 1 0 5 8 7 . 6 % 6 o r l e s s 1 0 6 6 7 . 0 % P C 7 o r m o r e 3 5 9 9 9 . 2 % 6 o r l e s s 2 5 5 6 5 . 1 % Table 1.
+reference_135,"As can be seen in Figure 3, the phrases in the “agree” set include completely different relationships, which are not paraphrases."
+reference_136,Other errors include NE tagging errors and errors due to a phrase which includes other NEs.
+reference_145,"Out of those 15 links, 4 are errors, namely “buy - pay”, “acquire - pay”, “purchase - stake” “acquisition - stake”."
+reference_151,D o m ai n Li n k ac cu ra cy W N c o v e r a g e C C 7 3 . 3 % 2 / 1 1 P C 8 8 . 9 % 2 / 8 Table 2.
+reference_153,The work reported here is closely related to [Ha- segawa et al. 04].
+reference_161,"[Hasegawa et al. 04] reported only on relation discovery, but one could easily acquire para phrases from the results."
+reference_163,There have been other kinds of efforts to discover paraphrase automatically from corpora.
+reference_166,Another approach to finding paraphrases is to find phrases which take similar subjects and objects in large corpora by using mutual information of word distribution [Lin and Pantel 01].
+reference_169,"The basic strategy is, for a given pair of entity types, to start with some examples, like several famous book title and author pairs; and find expressions which contains those names; then using the found expressions, find more author and book title pairs."
+reference_171,"However, those methods need initial seeds, so the relation between entities has to be known in advance."
+reference_176,"Sometime, multiple words are needed, like “vice chairman”, “prime minister” or “pay for” (“pay” and “pay for” are different senses in the CC-domain)."
+reference_194,"Also, the method of using keywords rules out phrases which don’t contain popular words in the domain."
+reference_196,Rather we believe several methods have to be developed using different heuristics to discover wider variety of paraphrases.
+reference_198,One obvious application is information extraction.
+reference_201,"Also, expanding on the techniques for the automatic generation of extraction patterns (Riloff 96; Sudo 03) using our method, the extraction patterns which have the same meaning can be automatically linked, enabling us to produce the final table fully automatically."
+reference_202,"While there are other obstacles to completing this idea, we believe automatic paraphrase discovery is an important component for building a fully automatic information extraction system."
+reference_203,We proposed an unsupervised method to discover paraphrases from a large untagged corpus.
+reference_204,"We are focusing on phrases which have two Named Entities (NEs), as those types of phrases are very important for IE applications."
+reference_205,"After tagging a large corpus with an automatic NE tagger, the method tries to find sets of paraphrases automatically without being given a seed phrase or any kind of cue."
+reference_209,"This research was supported in part by the Defense Advanced Research Projects Agency as part of the Translingual Information Detection, Extraction and Summarization (TIDES) program, under Grant N66001001-18917 from the Space and Naval Warfare Systems Center, San Diego, and by the National Science Foundation under Grant IIS00325657."

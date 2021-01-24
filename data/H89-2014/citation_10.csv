@@ -1,0 +1,4 @@
+ref,citation_10,reference_id
+"An alternative approach taken by Jelinek, (Jelinek, 1985) is to view the training problem in terms of a ""hidden"" Markov model: that is, only the words of the training text are available, their corresponding categories are not known.",2.9221770857213274,reference_22
+A state is generally used in several places (E.g. in Figure 1.,2.971804401520786,reference_101
+"To model the context necessary to correct the error, two extra states are used, as shown in Figure 1.",3.0303104024170056,reference_94

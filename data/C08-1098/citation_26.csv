@@ -1,0 +1,4 @@
+ref,citation_26,reference_id
+Table 2: Tagging accuracies on development data in percent.,2.164574129083872,reference_147
+Figure 2: Tagging accuracy on development data depending on context size Figure 2 shows that the tagging accuracy tends to increase with the context size.,2.642075409971952,reference_169
+"this error is not counted, the tagging accuracy on the development data rises from 92.17% to 94.27%.",2.700338731755308,reference_187

@@ -1,0 +1,4 @@
+ref,citation_0,reference_id
+"In experiments with German and Czech corpora, this method achieved a higher tagging accuracy than two state-of-the-art general-purpose POS taggers (TnT and SVMTool).",2.149426370770533,reference_224
+The best accuracy of the TnT tagger was 88.2% with a maximal suffix length of 5.,2.4258684208855312,reference_203
+The TnT tagger achieves 86.3% accuracy on the default tagset.,2.650837291383479,reference_156

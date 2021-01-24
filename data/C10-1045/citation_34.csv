@@ -1,0 +1,4 @@
+ref,citation_34,reference_id
+"A better approach would be to distin guish between these cases, possibly by drawing on the vast linguistic work on Arabic connectives (AlBatal, 1990).",2.959785309142757,reference_70
+The Stanford parser includes both the manually annotated grammar (§4) and an Arabic unknown word model with the following lexical features: 1.,2.997433266797956,reference_239
+"We extend the Stanford parser to accept pre-generated lattices, where each word is represented as a finite state automaton.",3.001203553509418,reference_278

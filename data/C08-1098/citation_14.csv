@@ -1,0 +1,4 @@
+ref,citation_14,reference_id
+"It is annotated with POS tags from the coarse-grained STTS tagset and with additional features encoding information about number, gender, case, person, degree, tense, and mood.",2.765438426964288,reference_126
+The singular attribute of a noun and an adjective POS tag are therefore two different attributes.4 Each position in the POS tags of a given category corresponds to a feature.,2.9776180076048453,reference_92
+"Unfortunately, the POS trigram consisting of the tags of the first three words does not occur in the Tiger corpus.",2.986710814657662,reference_22

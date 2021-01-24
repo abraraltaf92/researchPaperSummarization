@@ -1,0 +1,4 @@
+ref,citation_7,reference_id
+We apply a beam search concept as in speech recognition.,2.470592021208436,reference_164
+Restrictions: Quasi-monotone Search The above search space is still too large to allow the translation of a medium length input sentence.,2.704895728820411,reference_83
+Table 5: Effect of the beam threshold on the number of search errors (147 sentences).,2.816157917887269,reference_185

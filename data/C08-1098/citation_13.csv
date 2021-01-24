@@ -1,0 +1,4 @@
+ref,citation_13,reference_id
+"Unfortunately, the POS trigram consisting of the tags of the first three words does not occur in the Tiger corpus.",2.3229599615379475,reference_22
+The singular attribute of a noun and an adjective POS tag are therefore two different attributes.4 Each position in the POS tags of a given category corresponds to a feature.,2.590699119817441,reference_92
+"Note that only the words, but not the POS tags from the test and development data were used, here.",2.664263808108437,reference_132

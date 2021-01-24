@@ -1,0 +1,4 @@
+ref,citation_5,reference_id
+"Recent work has made significant progress on unsupervised POS tagging (Me´rialdo, 1994; Smith and Eisner, 2005; Haghighi and Klein, 2006; Johnson,2007; Goldwater and Griffiths, 2007; Gao and John son, 2008; Ravi and Knight, 2009).",2.7536800135511954,reference_32
+We have presented a method for unsupervised part- of-speech tagging that considers a word type and its allowed POS tags as a primary element of the model.,2.757545502760295,reference_235
+We consider the unsupervised POS induction problem without the use of a tagging dictionary.,2.7770560861116644,reference_51

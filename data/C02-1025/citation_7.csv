@@ -1,0 +1,4 @@
+ref,citation_7,reference_id
+"These results are achieved by training on the official MUC6 and MUC7 training data, which is much less training data than is used by other machine learning systems that worked on the MUC6 or MUC7 named entity task (Bikel et al., 1997; Bikel et al., 1999; Borth- wick, 1999).",2.2767690274194914,reference_13
+"In MUC6 and MUC7, the named entity task is defined as finding the following classes of names: person, organization, location, date, time, money, and percent (Chinchor, 1998; Sundheim, 1995) Machine learning systems in MUC6 and MUC 7 achieved accuracy comparable to rule-based systems on the named entity task.",2.538955911082877,reference_6
+"The local features used are similar to those used in BBN' s IdentiFinder (Bikel et al., 1999) or MENE (Borthwick, 1999).",2.6827659958755303,reference_63

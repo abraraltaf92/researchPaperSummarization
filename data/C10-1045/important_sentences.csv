@@ -1,0 +1,65 @@
+reference_id,reference
+reference_0,"In this paper, we offer broad insight into the underperformance of Arabic constituency parsing by analyzing the interplay of linguistic phenomena, annotation choices, and model design."
+reference_2,"Second, we show that although the Penn Arabic Treebank is similar to other tree- banks in gross statistical terms, annotation consistency remains problematic."
+reference_4,"Fourth, we show how to build better models for three different parsers."
+reference_10,"To investigate the influence of these factors, we analyze Modern Standard Arabic (henceforth MSA, or simply “Arabic”) because of the unusual opportunity it presents for comparison to English parsing results."
+reference_11,"The Penn Arabic Treebank (ATB) syntactic guidelines (Maamouri et al., 2004) were purposefully borrowed without major modification from English (Marcus et al., 1993)."
+reference_13,But Arabic contains a variety of linguistic phenomena unseen in English.
+reference_20,"Next we show that the ATB is similar to other tree- banks in gross statistical terms, but that annotation consistency remains low relative to English (§3)."
+reference_22,"To facilitate comparison with previous work, we exhaustively evaluate this grammar and two other parsing models when gold segmentation is assumed (§5)."
+reference_23,"Finally, we provide a realistic eval uation in which segmentation is performed both in a pipeline and jointly with parsing (§6)."
+reference_25,"To our knowledge, ours is the first analysis of this kind for Arabic parsing."
+reference_26,Arabic is a morphologically rich language with a root-and-pattern system similar to other Semitic languages.
+reference_38,"Because these two words have identical complements, syntax rules are typically unhelpful for distinguishing between them."
+reference_40,"Even with vocalization, there are linguistic categories that are difficult to identify without semantic clues."
+reference_42,"Moreover, they are used as substantives much 2 Unlike machine translation, constituency parsing is not significantly affected by variable word order."
+reference_43,"However, when grammatical relations like subject and object are evaluated, parsing performance drops considerably (Green et al., 2009)."
+reference_48,"4 Traditional Arabic linguistic theory treats both of these types as subcategories of noun � '.i . Figure 1: The Stanford parser (Klein and Manning, 2002) is unable to recover the verbal reading of the unvocalized surface form 0 an (Table 1)."
+reference_61,Arabic sentences of up to length 63 would need to be.
+reference_63,We propose a limit of 70 words for Arabic parsing evaluations.
+reference_65,"Test set OOV rate is computed using the following splits: ATB (Chiang et al., 2006); CTB6 (Huang and Harper, 2009); Negra (Dubey and Keller, 2003); English, sections 221 (train) and section 23 (test)."
+reference_70,"A better approach would be to distin guish between these cases, possibly by drawing on the vast linguistic work on Arabic connectives (AlBatal, 1990)."
+reference_71,We show that noun-noun vs. discourse-level coordination ambiguity in Arabic is a significant source of parsing errors (Table 8c).
+reference_79,"Evalb, the standard parsing metric, is biased toward such corpora (Sampson and Babarczy, 2003)."
+reference_80,Also surprising is the low test set OOV rate given the possibility of morphological variation in Arabic.
+reference_83,Annotation consistency is important in any supervised learning task.
+reference_84,"In the initial release of the ATB, inter-annotator agreement was inferior to other LDC treebanks (Maamouri et al., 2008)."
+reference_98,Human evaluation is one way to distinguish between the two cases.
+reference_108,"7 Unlike Dickinson (2005), we strip traces and only con-."
+reference_112,We can use the preceding linguistic and annotation insights to build a manually annotated Arabic grammar in the manner of Klein and Manning (2003).
+reference_116,We start with noun features since written Arabic contains a very high proportion of NPs.
+reference_119,"We also add an annotation for one-level iDafa (oneLevelIdafa) constructs since they make up more than 75% of the iDafa NPs in the ATB (Gabbard and Kulick, 2008)."
+reference_127,8 We use head-finding rules specified by a native speaker.
+reference_130,termined by the category of the word that follows it.
+reference_136,"Historically, Arabic grammar has identified two sentences types: those that begin with a nominal (� '.i �u _.."
+reference_141,We also mark all nodes that dominate an SVO configuration (containsSVO).
+reference_145,"Although this feature helps, we encounter one consequence of variable word order."
+reference_149,"We compare the manually annotated grammar, which we incorporate into the Stanford parser, to both the Berkeley (Petrov et al., 2006) and Bikel (Bikel, 2004) parsers."
+reference_153,"At the phrasal level, we remove all function tags and traces."
+reference_159,In Table 7 we give results for several evaluation metrics.
+reference_161,"For parsing, this is a mistake, especially in the case of interrogatives."
+reference_170,Variants of alif are inconsistently used in Arabic texts.
+reference_172,"12 For English, our Evalb implementation is identical to the most recent reference (EVALB20080701)."
+reference_224,"(2009b) evaluated the Bikel parser using the same ATB split, but only reported dev set results with gold POS tags for sentences of length ≤ 40."
+reference_226,We are unaware of prior results for the Stanford parser.
+reference_239,The Stanford parser includes both the manually annotated grammar (§4) and an Arabic unknown word model with the following lexical features: 1.
+reference_242,3.
+reference_246,Modifying the Berkeley parser for Arabic is straightforward.
+reference_248,We use the default inference parameters.
+reference_249,"Because the Bikel parser has been parameter- ized for Arabic by the LDC, we do not change the default model settings."
+reference_266,In Figure 4 we show an example of variation between the parsing models.
+reference_268,"The errors shown are from the Berkeley parser output, but they are representative of the other two parsing models."
+reference_270,"Although the segmentation requirements for Arabic are not as extreme as those for Chinese, Arabic is written with certain cliticized prepositions, pronouns, and connectives connected to adjacent words."
+reference_272,The ATB segmentation scheme is one of many alternatives.
+reference_274,"But gold segmentation is not available in application settings, so a segmenter and parser are arranged in a pipeline."
+reference_276,"Lattice parsing (Chappelier et al., 1999) is an alternative to a pipeline that prevents cascading errors by placing all segmentation options into the parse chart."
+reference_277,"Recently, lattices have been used successfully in the parsing of Hebrew (Tsarfaty, 2006; Cohen and Smith, 2007), a Semitic language with similar properties to Arabic."
+reference_278,"We extend the Stanford parser to accept pre-generated lattices, where each word is represented as a finite state automaton."
+reference_284,"Despite their simplicity, uni- gram weights have been shown as an effective feature in segmentation models (Dyer, 2009).13 The joint parser/segmenter is compared to a pipeline that uses MADA (v3.0), a state-of-the-art Arabic segmenter, configured to replicate ATB segmentation (Habash and Rambow, 2005)."
+reference_287,"However, in practice, unknown word models also make the distribution improper."
+reference_300,"Table 9 shows that MADA produces a high quality segmentation, and that the effect of cascading segmentation errors on parsing is only 1.92% F1."
+reference_303,"Nonetheless, parse quality is much lower in the joint model because a lattice is effectively a long sentence."
+reference_309,Each model was able to produce hypotheses for all input sentences.
+reference_311,"By establishing significantly higher parsing baselines, we have shown that Arabic parsing performance is not as poor as previously thought, but remains much lower than English."
+reference_314,Our results suggest that current parsing models would benefit from better annotation consistency and enriched annotation in certain syntactic configurations.
+reference_318,This paper is based on work supported in part by DARPA through IBM.

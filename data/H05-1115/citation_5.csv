@@ -1,0 +1,4 @@
+ref,citation_5,reference_id
+"It was also the model used torank sentences in (Erkan and Radev, 2004).",2.880868508690259,reference_82
+"This model hasproven to be successful in query-based sentence retrieval (Allan et al., 2003), and is used as our competitive baseline in this study (e.g. Tables 4, 5 and7).",2.950586542583323,reference_58
+"A non-ergodic Markov chain can bemade ergodic by reserving a small probability for jumping toany other state from the current state (Page et al., 1998).",3.012488469972974,reference_95

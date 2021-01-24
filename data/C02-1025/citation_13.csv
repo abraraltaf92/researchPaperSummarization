@@ -1,0 +1,4 @@
+ref,citation_13,reference_id
+"The use of global features has improved the performance on MUC6 test data from 90.75% to 93.27% (27% reduction in errors), and the performance on MUC7 test data from 85.22% to 87.24% (14% reduction in errors).",2.3614494410882534,reference_12
+Global features are extracted from other occurrences of the same token in the whole document.,2.521917550051032,reference_62
+We group the features used into feature groups.,2.620756558534622,reference_70

@@ -1,0 +1,4 @@
+ref,citation_0,reference_id
+"Since MUC6, BBN' s Hidden Markov Model (HMM) based IdentiFinder (Bikel et al., 1997) has achieved remarkably good performance.",2.6361087479007144,reference_18
+"The local features used are similar to those used in BBN' s IdentiFinder (Bikel et al., 1999) or MENE (Borthwick, 1999).",2.780562654266877,reference_63
+"MUC7 has also seen hybrids of statistical NERs and hand-coded systems (Mikheev et al., 1998; Borthwick, 1999), notably Mikheev' s system, which achieved the best performance of 93.39% on the official NE test data.",2.9473287593943147,reference_19

@@ -1,0 +1,4 @@
+ref,citation_6,reference_id
+"A pre-tagged training corpus is not required, and the tagger can cope with words not found in the training text.",2.6946926584220137,reference_146
+"A total of 1,526 words had ambiguous categories (i.e. 40% of the document).",2.935096928280115,reference_126
+"In the document, 142 words were tagged as unknown (their possible categories were not known).",3.013014864910555,reference_125

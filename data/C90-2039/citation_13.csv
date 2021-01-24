@@ -1,0 +1,4 @@
+ref,citation_13,reference_id
+The strategic lazy incremental copy graph (SLING) unification method combines two incremental copy graph unification methods: the lazy incremental copy graph (LING) unification method and the strategic incremental copy graph (SING) unification method.,1.130790828287378,reference_201
+"Incremental Copy Graph Unification PROCEDURE Unify(node1, node2) node1 = Dereference(nodel).",1.5922224201571284,reference_115
+Ile proposed an incremental copy graph unification method to avoid over copying and early copying.,1.7754822048508143,reference_19

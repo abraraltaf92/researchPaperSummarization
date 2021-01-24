@@ -1,0 +1,4 @@
+ref,citation_8,reference_id
+"After tagging a large corpus with an automatic NE tagger, the method tries to find sets of paraphrases automatically without being given a seed phrase or any kind of cue.",2.2733795243790103,reference_205
+"After tagging a large corpus with an automatic NE tagger, the method tries to find sets of paraphrases automatically without being given a seed phrase or any kinds of cue.",2.2809784303084832,reference_23
+We proposed an unsupervised method to discover paraphrases from a large untagged corpus.,2.286532618901692,reference_203

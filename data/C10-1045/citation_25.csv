@@ -1,0 +1,4 @@
+ref,citation_25,reference_id
+The ATB segmentation scheme is one of many alternatives.,2.4899494872346524,reference_272
+"Finally, we provide a realistic eval uation in which segmentation is performed both in a pipeline and jointly with parsing (§6).",2.6431274550688726,reference_23
+"But gold segmentation is not available in application settings, so a segmenter and parser are arranged in a pipeline.",2.7716745158318408,reference_274

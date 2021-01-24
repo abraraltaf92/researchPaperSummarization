@@ -1,0 +1,4 @@
+ref,citation_6,reference_id
+Another approach to finding paraphrases is to find phrases which take similar subjects and objects in large corpora by using mutual information of word distribution [Lin and Pantel 01].,2.6577476376970903,reference_166
+"In order to create an IE system for a new domain, one has to spend a long time to create the knowledge.",2.763785670786455,reference_19
+"The basic strategy is, for a given pair of entity types, to start with some examples, like several famous book title and author pairs; and find expressions which contains those names; then using the found expressions, find more author and book title pairs.",2.789949431702032,reference_169

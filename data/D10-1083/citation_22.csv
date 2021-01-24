@@ -1,0 +1,4 @@
+ref,citation_22,reference_id
+"As is standard, we report the greedy one-to-one (Haghighi and Klein, 2006) and the many-to-one token-level accuracy obtained from mapping model states to gold POS tags.",2.8727742806295917,reference_174
+"The resulting model is compact, efficiently learnable and linguistically expressive.",2.9221263315982102,reference_237
+"The equation for sampling a single type-level assignment Ti is given by, 0.2 0 5 10 15 20 25 30 Iteration Figure 2: Graph of the one-to-one accuracy of our full model (+FEATS) under the best hyperparameter setting by iteration (see Section 5).",2.949118896521247,reference_98

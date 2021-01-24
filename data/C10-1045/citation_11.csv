@@ -1,0 +1,4 @@
+ref,citation_11,reference_id
+"To facilitate comparison with previous work, we exhaustively evaluate this grammar and two other parsing models when gold segmentation is assumed (§5).",2.7305123947899976,reference_22
+"To investigate the influence of these factors, we analyze Modern Standard Arabic (henceforth MSA, or simply “Arabic”) because of the unusual opportunity it presents for comparison to English parsing results.",2.897125694870021,reference_10
+"A better approach would be to distin guish between these cases, possibly by drawing on the vast linguistic work on Arabic connectives (AlBatal, 1990).",2.9421578196332945,reference_70

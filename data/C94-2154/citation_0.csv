@@ -1,0 +1,4 @@
+ref,citation_0,reference_id
+"C, erdemann ,% King [8] have also shown that a feature strtlcture l]leets all encoded FCRs ifl"" the feature structure is satisfiable.",2.776503421646444,reference_71
+"well-typable iff the feature structure subsumes a well-typed feature structure, in ALl.:, type infereneing is employed to ensure that all feature structures are well-typable--in fact, all feature structures are well typed.",2.895041383026954,reference_61
+"Let type resolution be the total function R:->DRFS such that R(F) is the set of all resolvants of F. Guided by the partition and all-or-nothing conditions, King [13] has formulated a semantics of feature structures and developed a notion of a satisfiable feature structure such that F E FS is satisfiable iff R(F) 0.",2.917510756986104,reference_69

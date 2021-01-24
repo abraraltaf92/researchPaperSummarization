@@ -1,0 +1,4 @@
+ref,citation_4,reference_id
+"Using less training data than other systems, our NER is able to perform as well as other state-of-the-art NERs.",2.7308449437629547,reference_197
+"Same for . In the case where the next token is a hyphen, then is also used as a feature: (init- Caps, ) is set to 1.",2.762290836639524,reference_95
+"If it starts with a lower case letter, and contains both upper and lower case letters, then (mixedCaps, zone) is set to 1.",2.873645869637609,reference_82

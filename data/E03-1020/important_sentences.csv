@@ -1,0 +1,38 @@
+reference_id,reference
+reference_0,This paper presents an unsupervised algorithm which automatically discovers word senses from text.
+reference_1,The algorithm is based on a graph model representing words and relationships between them.
+reference_2,Sense clusters are iteratively computed by clustering the local graph of similar words around an ambiguous word.
+reference_4,We use the same data for both recognising and resolving ambiguity.
+reference_6,Automatic word sense discovery has applications of many kinds.
+reference_8,"The same corpus evidence which supports a clustering of an ambiguous word into distinct senses can be used to decide which sense is referred to in a given context (Schiitze, 1998)."
+reference_10,"In section 2, we present the graph model from which we discover word senses."
+reference_11,"Section 3 describes the way we divide graphs surrounding ambiguous words into different areas corresponding to different senses, using Markov clustering (van Dongen, 2000)."
+reference_19,"Following the method in (Widdows and Dorow, 2002), we build a graph in which each node represents a noun and two nodes have an edge between them if they co-occur in lists more than a given number of times 1."
+reference_21,The word sense clustering algorithm as outlined below can be applied to any kind of similarity measure based on any set of features.
+reference_26,"sz44, CD miltrA, litrepate inovio.� h,) Cik Figure 1: Local graph of the word mouse"
+reference_29,"There are, of course, many more types of polysemy (cf."
+reference_33,"Therefore, even after removal of the wing-node, the two areas of meaning are still linked via tail."
+reference_35,"However, whereas there are many edges within an area of meaning, there is only a small number of (weak) links between different areas of meaning."
+reference_36,"To detect the different areas of meaning in our local graphs, we use a cluster algorithm for graphs (Markov clustering, MCL) developed by van Dongen (2000)."
+reference_47,"However, there are ambiguous words with more closely related senses which are metaphorical or metonymic variations of one another."
+reference_49,"Usually, one sense of an ambiguous word w is much more frequent than its other senses present in the corpus."
+reference_50,"If the local graph handed over to the MCL process is small, we might miss some of w's meanings in the corpus."
+reference_51,"On the other hand, if the local graph is too big, we will get a lot of noise."
+reference_52,"Below, we outline an algorithm which circumvents the problem of choosing the right parameters."
+reference_53,"In contrast to pure Markov clustering, we don't try to find a complete clustering of G into senses at once."
+reference_56,"This is achieved, in a manner similar to Pantel and Lin's (2002) sense clustering approach, by removing c's features from the set of features used for finding similar words."
+reference_59,The algorithm consists of the following steps: 1.
+reference_60,Compute a small local graph Gw around w using the set of features F. If the similarity between w and its closest neighbour is below a fixed threshold go to 6.
+reference_64,4.
+reference_66,Go back to 1 with the reduced/devalued set of features F. 6.
+reference_69,7.
+reference_70,Output the list of class-labels which best represent the different senses of w in the corpus.
+reference_71,"The local graph in step 1 consists of w, the ni neighbours of w and the n9 neighbours of the neighbours of w. Since in each iteration we only attempt to find the ""best"" cluster, it suffices to build a relatively small graph in 1."
+reference_73,"In our simple model based on noun co-occurrences in lists, step 5 corresponds to rebuilding the graph under the restriction that the nodes in the new graph not co-occur (or at least not very often) with any of the cluster members already extracted."
+reference_74,"The class-labelling (step 6) is accomplished using the taxonomic structure of WordNet, using a robust algorithm developed specially for this purpose."
+reference_79,We used the simple graph model based on co-occurrences of nouns in lists (cf.
+reference_84,An extract of the results is listed in table 1.
+reference_86,"The benefits of automatic, data-driven word sense discovery for natural language processing and lexicography would be very great."
+reference_94,"They often contain many rare senses, but not the same ones that are relevant for specific domains or corpora."
+reference_95,The problem can be addressed by using word sense clustering to attune an existing resource to accurately describe the meanings used in a particular corpus.
+reference_97,"section 2), and we plan to evaluate the uses of our clustering algorithm for unsupervised disambiguation more thoroughly."

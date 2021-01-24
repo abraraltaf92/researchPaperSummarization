@@ -1,0 +1,4 @@
+ref,citation_1,reference_id
+"It can be trained reliably on moderate amounts of training text, and through the use of selectively augmented networks it can model high-order dependencies without requiring an excessive number of parameters.",3.0423780576854105,reference_147
+For an n category model this requires n 3 transition probabilities.,3.046025286051933,reference_81
+The systems previously mentioned require a pre-tagged training corpus in order to collect word counts or to perform back-propagation.,3.046465142696138,reference_20
