@@ -1,6 +1,8 @@
 import sys
 import os
 from wmd import dist
+from top3_output import top_3
+from imp_cits import imp_sent
 path = 'data'
 list1 = []       # citation papers
 list2 = []       # research papers
@@ -9,6 +11,7 @@ list3 = []       # folder where both of cp & rp are stored
 def result(ref,cit,f_name):
     dist(ref,cit,f_name)     # distance using wmd method
     top_3(ref, f_name)       # top 3 citation - reference pair
+    imp_sent(f_name)
 for root, dirs , files in os.walk(path,topdown=False):
     print(f" directory : {root}")
     dirs = root.split('/')

@@ -20,7 +20,7 @@ stopWords = stopwords.words('english')  #selecting language
 
 googleNewsCorpus_path = '/Users/abraraltaflone/code/python/GoogleNews-vectors-negative300.bin.gz'
 if not os.path.exists(googleNewsCorpus_path):
-    rasie ValueError(" Alert : You need to download the google news corpus")
+    raise ValueError(" Alert : You need to download the google news corpus")
 
 model = gensim.models.KeyedVectors.load_word2vec_format(googleNewsCorpus_path, binary=True)
 
