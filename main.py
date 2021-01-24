@@ -11,7 +11,7 @@ list3 = []       # folder where both of cp & rp are stored
 def result(ref,cit,f_name):
     dist(ref,cit,f_name)     # distance using wmd method
     top_3(ref, f_name)       # top 3 citation - reference pair
-    imp_sent(f_name)
+    imp_sent(f_name)         # collection of imp citations with summary
 for root, dirs , files in os.walk(path,topdown=False):
     # print(f" directory : {root}")
     dirs = root.split('/')

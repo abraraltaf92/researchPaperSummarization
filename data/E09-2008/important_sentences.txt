@@ -9,4 +9,15 @@ printf("Regex matches"); 9.
 However, this on-the-fly minimization and determinization can be relaxed, and a Thompson construction method chosen in the interface so that automata remain non-deterministic and non- minimized whenever possible—non-deterministic automata naturally being easier to inspect and analyze.
 Table 2 shows a comparison with some existing toolkits that build deterministic, minimized automata/transducers.
 For general usage patterns, this advantage is not quite as dramatic, and for average use Foma seems to perform comparably with e.g. the Xerox/PARC toolkit, perhaps with the exception of certain types of very large lexicon descriptions (>100,000 words).
+North Sami is a large lexicon (lexc file) for the North Sami language available from http://divvun.no.The compiler allows users to specify finite-state automata and transducers incrementally in a similar fashion to AT&T’s fsm (Mohri et al., 1997) and Lextools (Sproat, 2003), the Xerox/PARC finite- state toolkit (Beesley and Karttunen, 2003) and the SFST toolkit (Schmid, 2005).
+These may be useful for someone wanting to build a separate GUI or interface using just the existing low- level functions.
+Retaining backwards compatibility with Xerox/PARC and at the same time extending the formalism means that one is often able to construct finite-state networks in equivalent various ways, either through ASCII-based operators or through the Unicode-based extensions.
+N/A N/A ‘ignores’, left quotient, right quotient, ‘inside’ quotient ∈ ∈/ = /= N/A language membership, position equivalence ≺ < > precedes, follows ∨ ∪ ∧ ∩ - .P. .p. | & − .P. .p. union, intersection, set minus, priority unions => -> (->) @-> => -> (->) @-> context restriction, replacement rules <> shuffle (asynchronous product) × ◦ .x. .o. cross-product, composition Table 1: The regular expressions available in Foma from highest to lower precedence.
+The Foma API gives access to basic functions, such as constructing a finite-state machine from a regular expression provided as a string, performing a transduction, and exhaustively matching against a given string starting from every position.
+fsm_t *network; 3.
+fsm_match_result *result; 4.
+printf("Regex matches"); 9.
+However, this on-the-fly minimization and determinization can be relaxed, and a Thompson construction method chosen in the interface so that automata remain non-deterministic and non- minimized whenever possible—non-deterministic automata naturally being easier to inspect and analyze.
+Table 2 shows a comparison with some existing toolkits that build deterministic, minimized automata/transducers.
+For general usage patterns, this advantage is not quite as dramatic, and for average use Foma seems to perform comparably with e.g. the Xerox/PARC toolkit, perhaps with the exception of certain types of very large lexicon descriptions (>100,000 words).
 North Sami is a large lexicon (lexc file) for the North Sami language available from http://divvun.no.

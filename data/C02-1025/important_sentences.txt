@@ -37,4 +37,43 @@ As can be seen in Table 4, our training data is a lot less than those used by ME
 In this section, we try to compare our results with those obtained by IdentiFinder ' 97 (Bikel et al., 1997), IdentiFinder ' 99 (Bikel et al., 1999), and MENE (Borthwick, 1999).
 IdentiFinder ' 99' s results are considerably better than IdentiFinder ' 97' s. IdentiFinder' s performance in MUC7 is published in (Miller et al., 1998).
 The secondary classifier in (Borthwick, 1999) uses information not just from the current article, but also from the whole test corpus, with an additional feature that indicates if the information comes from the same document or from another document.
+Using less training data than other systems, our NER is able to perform as well as other state-of-the-art NERs.In MUC6 and MUC7, the named entity task is defined as finding the following classes of names: person, organization, location, date, time, money, and percent (Chinchor, 1998; Sundheim, 1995) Machine learning systems in MUC6 and MUC 7 achieved accuracy comparable to rule-based systems on the named entity task.
+As far as we know, no other NERs have used information from the whole document (global) as well as information within the same sentence (local) in one framework.
+The use of global features has improved the performance on MUC6 test data from 90.75% to 93.27% (27% reduction in errors), and the performance on MUC7 test data from 85.22% to 87.24% (14% reduction in errors).
+These results are achieved by training on the official MUC6 and MUC7 training data, which is much less training data than is used by other machine learning systems that worked on the MUC6 or MUC7 named entity task (Bikel et al., 1997; Bikel et al., 1999; Borth- wick, 1999).
+Since MUC6, BBN' s Hidden Markov Model (HMM) based IdentiFinder (Bikel et al., 1997) has achieved remarkably good performance.
+MUC7 has also seen hybrids of statistical NERs and hand-coded systems (Mikheev et al., 1998; Borthwick, 1999), notably Mikheev' s system, which achieved the best performance of 93.39% on the official NE test data.
+(1998) did make use of information from the whole document.
+Another attempt at using global information can be found in (Borthwick, 1999).
+both MENE and IdentiFinder used more training data than we did (we used only the official MUC 6 and MUC7 training data).
+It uses a maximum entropy framework and classifies each word given its features.
+Each name class is subdivided into 4 sub-classes, i.e., N begin, N continue, N end, and N unique.
+Hence, there is a total of 29 classes (7 name classes 4 sub-classes 1 not-a-name class).
+We have used the Java-based opennlp maximum entropy package1.
+The probability of the classes assigned to the words in a sentence in a document is defined as follows: where is determined by the maximum entropy classifier.
+The features we used can be divided into 2 classes: local and global.
+Local features are features that are based on neighboring tokens, as well as the token itself.
+Global features are extracted from other occurrences of the same token in the whole document.
+The local features used are similar to those used in BBN' s IdentiFinder (Bikel et al., 1999) or MENE (Borthwick, 1999).
+This might be because our features are more comprehensive than those used by Borthwick.
+In the maximum entropy framework, there is no such constraint.
+Multiple features can be used for the same token.
+We group the features used into feature groups.
+For each token , zero, one, or more of the features in each feature group are set to 1.
+This feature imposes constraints Table 1: Features based on the token string that are based on the probability of each name class during training.
+For example, in MUC6, there are four zones (TXT, HL, DATELINE, DD).
+Hence, for each token, one of the four features zone-TXT, zone- HL, zone-DATELINE, or zone-DD is set to 1, and the other 3 are set to 0.
+If it starts with a lower case letter, and contains both upper and lower case letters, then (mixedCaps, zone) is set to 1.
+At most one feature in this group will be set to 1.
+Lexicon Feature of Previous and Next Token: The string of the previous token and the next token is used with the initCaps information of . If has initCaps, then a feature (initCaps, ) is set to 1.
+Same for . In the case where the next token is a hyphen, then is also used as a feature: (init- Caps, ) is set to 1.
+If is one of Monday, Tuesday, . . .
+The most frequently occurring last words of organization names in cslist are compiled into a list of corporate suffixes, Corporate-Suffix- List.
+Sentence (2) and (3) help to disambiguate one way or the other.
+If all three sentences are in the same document, then even a human will find it difficult to classify McCann in (1) into either person or organization, unless there is some other information provided.
+The baseline system in Table 3 refers to the maximum entropy system that uses only local features.
+As can be seen in Table 4, our training data is a lot less than those used by MENE and IdentiFinder3.
+In this section, we try to compare our results with those obtained by IdentiFinder ' 97 (Bikel et al., 1997), IdentiFinder ' 99 (Bikel et al., 1999), and MENE (Borthwick, 1999).
+IdentiFinder ' 99' s results are considerably better than IdentiFinder ' 97' s. IdentiFinder' s performance in MUC7 is published in (Miller et al., 1998).
+The secondary classifier in (Borthwick, 1999) uses information not just from the current article, but also from the whole test corpus, with an additional feature that indicates if the information comes from the same document or from another document.
 Using less training data than other systems, our NER is able to perform as well as other state-of-the-art NERs.
