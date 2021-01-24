@@ -29,5 +29,5 @@ def imp_sent(f_name):
     with open(f_name + '/important_sentences.txt', 'a', encoding='utf-8') as filehandle:
         text = "\n".join(map(lambda x: x.replace("\n", " "), df.reference))
         filehandle.write(text)
-        with open(f_name + '/summary.txt', 'w', encoding='utf-8') as filehandle_2:
+        with open(f_name + '/summary_t5.txt', 'w', encoding='utf-8') as filehandle_2:
             t5_summary(text, filehandle_2)

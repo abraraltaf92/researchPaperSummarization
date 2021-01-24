@@ -1,12 +1,11 @@
 import torch
 from transformers import T5Tokenizer, T5ForConditionalGeneration
 
-model = T5ForConditionalGeneration.from_pretrained('t5-small')
-tokenizer = T5Tokenizer.from_pretrained('t5-small')
-device = torch.device('cpu')
 
 def t5_summary(txt, sum_path):
-
+    model = T5ForConditionalGeneration.from_pretrained('t5-small')
+    tokenizer = T5Tokenizer.from_pretrained('t5-small')
+    device = torch.device('cpu')
 
     # file = open(imp_sent_path, mode='r')  # path of file to be read
     processing_text = txt

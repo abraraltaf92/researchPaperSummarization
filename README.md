@@ -7,10 +7,10 @@
 - [ ] Summa-Library
 - [ ] wordNet-Similarity-Check
 
-# Some Info :
+# Some filePath Info :
     data/.../..._parsed_data.csv            --> Scientific Research Paper
     data/.../....annv3_parsed_data.csv      --> Respective Citation Paper
-    data/.../summary.txt                    --> t5 abstractive Summarization
+    data/.../summary_t5.txt                    --> t5 abstractive Summarization
  
 
 #### To download google news corpus , this command works :

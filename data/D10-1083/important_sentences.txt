@@ -166,4 +166,46 @@ Overall, the difference between our most basic model (1TW) and our full model (+
 1 2 3.
 8 1 8.
 We have presented a method for unsupervised part- of-speech tagging that considers a word type and its allowed POS tags as a primary element of the model.
+The resulting model is compact, efficiently learnable and linguistically expressive.Part-of-speech (POS) tag distributions are known to exhibit sparsity — a word is likely to take a single predominant tag in a corpus.
+In practice, this sparsity constraint is difficult to incorporate in a traditional POS induction system (Me´rialdo, 1994; Johnson, 2007; Gao and Johnson, 2008; Grac¸a et al., 2009; Berg-Kirkpatrick et al., 2010).
+In this work, we take a more direct approach and treat a word type and its allowed POS tags as a primary element of the model.
+The model starts by generating a tag assignment for each word type in a vocabulary, assuming one tag per word.
+This model admits a simple Gibbs sampling algorithm where the number of latent variables is proportional to the number of word types, rather than the size of a corpus as for a standard HMM sampler (Johnson, 2007).
+Recent work has made significant progress on unsupervised POS tagging (Me´rialdo, 1994; Smith and Eisner, 2005; Haghighi and Klein, 2006; Johnson,2007; Goldwater and Griffiths, 2007; Gao and John son, 2008; Ravi and Knight, 2009).
+On one end of the spectrum are clustering approaches that assign a single POS tag to each word type (Schutze, 1995; Lamar et al., 2010).
+Another thread of relevant research has explored the use of features in unsupervised POS induction (Smith and Eisner, 2005; Berg-Kirkpatrick et al., 2010; Hasan and Ng, 2009).
+These methods demonstrated the benefits of incorporating linguistic features using a log-linear parameterization, but requires elaborate machinery for training.
+In our work, we demonstrate that using a simple na¨ıveBayes approach also yields substantial performance gains, without the associated training complexity.
+We consider the unsupervised POS induction problem without the use of a tagging dictionary.
+Conditioned on T , features of word types W are drawn.
+Once HMM parameters (θ, φ) are drawn, a token-level tag and word sequence, (t, w), is generated in the standard HMM fashion: a tag sequence t is generated from φ.
+The type-level tag assignments T generate features associated with word types W . The tag assignments constrain the HMM emission parameters θ.
+In contrast, NNP (proper nouns) form a large portion of vocabulary.
+While possible to utilize the feature-based log-linear approach described in Berg-Kirkpatrick et al.
+The equation for sampling a single type-level assignment Ti is given by, 0.2 0 5 10 15 20 25 30 Iteration Figure 2: Graph of the one-to-one accuracy of our full model (+FEATS) under the best hyperparameter setting by iteration (see Section 5).
+For each cell, the first row corresponds to the result using the best hyperparameter choice, where best is defined by the 11 metric.
+The second row represents the performance of the median hyperparameter setting.
+Model components cascade, so the row corresponding to +FEATS also includes the PRIOR component (see Section 3).
+See Section 5.
+We train and test on the CoNLL-X training set.
+We experiment with four values for each hyperparameter resulting in 16 (α, β) combinations: α β 0.001, 0.01, 0.1, 1.0 0.01, 0.1, 1.0, 10 Iterations In each run, we performed 30 iterations of Gibbs sampling for the type assignment variables W .4 We use the final sample for evaluation.
+As is standard, we report the greedy one-to-one (Haghighi and Klein, 2006) and the many-to-one token-level accuracy obtained from mapping model states to gold POS tags.
+encodes the one tag per word constraint and is uni form over type-level tag assignments.
+We report results for the best and median hyperparameter settings obtained in this way.
+Specifically, for both settings we report results on the median run for each setting.
+Comparison with state-of-the-art taggers For comparison we consider two unsupervised tag- gers: the HMM with log-linear features of Berg- Kirkpatrick et al.
+The system of Berg-Kirkpatrick et al.
+We consider two variants of Berg-Kirkpatrick et al.
+Our second point of comparison is with Grac¸a et al.
+We can only compare with Grac¸a et al.
+(2009) on Portuguese (Grac¸a et al.
+(2009) also report results on English, but on the reduced 17 tag set, which is not comparable to ours).
+However, our full model takes advantage of word features not present in Grac¸a et al.
+Even without features, but still using the tag prior, our median result is 52.0%, still significantly outperforming Grac¸a et al.
+For this experiment, we compare our model with the uniform tag assignment prior (1TW) with the learned prior (+PRIOR).
+Similar behavior is observed when adding features.
+Overall, the difference between our most basic model (1TW) and our full model (+FEATS) is 21.2% and 13.1% for the best and median settings respectively.
+1 2 3.
+8 1 8.
+We have presented a method for unsupervised part- of-speech tagging that considers a word type and its allowed POS tags as a primary element of the model.
 The resulting model is compact, efficiently learnable and linguistically expressive.

@@ -76,4 +76,43 @@ That is, the SING unification method applied in an analysis system uses the fail
 By using learned failure tendency information, feature value unification is applied in an order that first treats features with the greatest tendency to fail.
 (2) Number of features FSs have: if each FS has only a small number of features, the efficiency gain from the SING unification method is small.
 Moreover, it is possible for each type symbol to select whether to apply feature unification order sorting or not.
+The strategic lazy incremental copy graph (SLING) unification method combines two incremental copy graph unification methods: the lazy incremental copy graph (LING) unification method and the strategic incremental copy graph (SING) unification method.The strategic lazy incremental copy graph unification method is a combination of two methods for unifying hmture structures.
+One, called the lazy incremental copy graph unification method, achieves structure sharing with constant order data access time which reduces the cequired memory.
+In such unification-based formalisms, feature ~trueture (FS) unification is the most fundamental and ..~ignifieant operation.
+Japanese analysis system based on llPSG[Kogure 891 uses 90% - 98% of the elapsed time in FS unification.
+Several FS unificatioa methods were proposed in IKarttunen 86, l'ereira 85, Wroblewski 871.
+These methods take two DGs as their inputs and give a unification result DG.
+Previous research identified DG copying as a significant overhead.
+Wroblewski claims that copying is wrong when an algorithm copies too much (over copying) or copies too soon (early copying).
+Ile proposed an incremental copy graph unification method to avoid over copying and early copying.
+Copying sharable parts is called redundant copying.
+A better method would nfinimize the copying of sharable varts.
+Pereira's structure sharing FS unification method can avoid this problem.
+3'he skeleton part is shared by one of the input FSs and the result FS.
+In this paper, some of the efficiency of the procedure- based system is introduced into an FS unification-based system.
+This method is called the strategic ij!~crementaI copy graph unification method (the SING unification method).
+Section 3 explains a TFS unification method based on Wroblewski's method and then explains the problem with his method.
+For ordinary FSs, unification is defined by using partial ordering based on subsumption relationships.
+1.
+For example, consider the case when feature a is first treated at the root nodes of G1 and G2 in Fig.
+For example, the node Y(G3/<o c g>) will be modified to be the unification result of G 1/<a c g> (or G1/<b d>) and G2/<b d> when the feature path <b d> will be treated.
+Incremental Copy Graph Unification PROCEDURE Unify(node1, node2) node1 = Dereference(nodel).
+This order is related to the unification failure tendency.
+This order strategy can be generalized to the EFF and applied to the ordering of arcs with common labels.
+5 disables structure sharing, ttowever, this whole copying is not necessary if a lazy evaluation method is used.
+With such a method, it is possible to delay copying a node until either its own contents need to change (e.g., node G3/Ka c !7>) or until it is found to have an arc (sequence) to a node t, hat needs to be copied (e.g., node X G3/<a c> in Fig.
+5 due to a change of node Y G3/<a c g>).
+The LING unification procedure uses a revised CopyNode procedure which does not copy structures immediately.
+The revised procedure uses a newly introduced slot COPY-DEPENDENCY.
+ENDIF Returo(newnode).
+ENDIF Return(newarcs).
+ENDPROCEDURE Figure 7: The revised CopyNode procedure has the disadvantage of treating copy dependency information.
+However, these two cases are very rare.
+Usually, the number of features in two input structures is relatively small and the sizes of the two input structures are often very different.
+Method In a system where FS unification is applied, there are features whose values fail relatively often in unification with other values and there are features whose values do not fail so often.
+In such cases, application of the EFF strategy, that is, treating features tending to fall in unification first, reduces unnecessary computation when the unification finally fails.
+That is, the SING unification method applied in an analysis system uses the failure tendency information acquired by a learning analysis process.
+By using learned failure tendency information, feature value unification is applied in an order that first treats features with the greatest tendency to fail.
+(2) Number of features FSs have: if each FS has only a small number of features, the efficiency gain from the SING unification method is small.
+Moreover, it is possible for each type symbol to select whether to apply feature unification order sorting or not.
 The strategic lazy incremental copy graph (SLING) unification method combines two incremental copy graph unification methods: the lazy incremental copy graph (LING) unification method and the strategic incremental copy graph (SING) unification method.
