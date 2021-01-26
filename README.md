@@ -4,7 +4,7 @@
     Summarize important citations grouped together using , one at a time !
 
 - [x] Text-To-Text-Transfer-Transformer 
-- [ ] Summa-Library
+- [x] Summa-Library
 - [ ] wordNet-Similarity-Check
 
 # Some filePath Info :
@@ -20,3 +20,7 @@
     wget -c "https://s3.amazonaws.com/dl4j-distribution/GoogleNews-vectors-negative300.bin.gz"
 
  After downloading replace path of googleNewsCorpus in above code with your local path of googleNewsCorpus
+
+#### To install all the package dependcies :
+
+        pip install requirements.txt
