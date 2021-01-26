@@ -1,0 +1,8 @@
+Being more readily available, comparable corpora are thus more suitable than parallel corpora for the task of acquiring new word translations, although relatively less research has been done in the past on comparable corpora.
+In this paper, we propose a new approach for the task of mining new word translations from comparable corpora, by combining both context and transliteration information.
+The work of (Fung and Yee, 1998; Rapp, 1995; Rapp, 1999) noted that if an English word e is the translation of a Chinese word c , then the contexts of the two words are similar.
+If a word e in English is indeed the translation of a word c in Chinese, then we would expect e to be ranked very high in both lists in general.
+Since we are using comparable corpora, it is possible that the translation of a new word does not exist in the target corpus.
+During the whole December period, we only managed to find English translations which were present in the English side of the comparable corpora for 43 Chinese words.
+On the other hand, using our method of combining both sources of information and setting M = ∞, 19 Chinese words (i.e., the first 22 Chinese words in Table 3 except 巴佐亚,坩埚,普利法) have their correct English translations at rank one position.
+In this paper, we proposed a new method to mine new word translations from comparable corpora, by combining context and transliteration information, which are complementary sources of information.

@@ -145,4 +145,102 @@ Morcˇe’s tagging accuracy was 95.12%, 0.3% better than the n-gram tagger.
 A hybrid system based on four different tagging methods reached an accuracy of 95.68%.
 Because of the different corpora used and the different amounts of lexical information available, a direct comparison to our results is difficult.
 The German tagging results are, to the best of our knowledge, the first published results for fine- grained POS tagging with the Tiger tagset.
+In experiments with German and Czech corpora, this method achieved a higher tagging accuracy than two state-of-the-art general-purpose POS taggers (TnT and SVMTool).We present a HMM part-of-speech tagging method which is particularly suited for POS tagsets with a large number of fine-grained tags.
+For languages with a rich morphology such as German or Czech, more fine-grained tagsets are often considered more appropriate.
+The additional information may also help to disambiguate the (base) part of speech.
+Unfortunately, the POS trigram consisting of the tags of the first three words does not occur in the Tiger corpus.
+Hence the context probability of the whole tag is. also 1.
+Discriminatively trained taggers, on the other hand, have difficulties to handle the huge number of features which are active at the same time if any possible combination of context attributes defines a separate feature.
+Our tagger generates a predictor for each feature (such as base POS, number, gender etc.) Instead of using a single tree for the prediction of all possible values of a feature (such as noun, article, etc. for base POS), the tagger builds a separate decision tree for each value.
+All context attributes other than the base POS are always used in combination with the base POS.
+The information gain is therefore 0.92 − (8/15 ∗ 1 − 7/15 ∗ 0.59) = 0.11.
+3 We also experimented with a pruning criterion based on binomial tests, which returned smaller trees with a slightly lower accuracy, although the difference in accuracy was never larger than 0.1% for any context size.
+Thus, pre-pruning with a threshold of 6 was used in the experiments.
+The first attribute of a POS tag is the main category.
+The singular attribute of a noun and an adjective POS tag are therefore two different attributes.4 Each position in the POS tags of a given category corresponds to a feature.
+The tagger may use an external lexicon which supplies entries for additional words which are not found in the training corpus, and additional tags for words which did occur in the training data.
+The best tag sequence is computed with the Viterbi algorithm.
+A supplementary lexicon was created by analyzing a word list which included all words from the faα paα (t) log paα(t) < 1 training, development, and test data with a German computationa l morphology.
+We took standard features from a 5 word window and M4LRL training without optimization of the regular- ization parameter C. In a second experiment, our tagger was also evaluated on the Czech Academic corpus 1.0 (Hladka´ et al., 2007) and compared to the TnT tag- ger.
+It is annotated with POS tags from the coarse-grained STTS tagset and with additional features encoding information about number, gender, case, person, degree, tense, and mood.
+The first 80% were used as training data, the first half of the rest as development data, and the last 10% as test data.
+Note that only the words, but not the POS tags from the test and development data were used, here.
+This strategy returned the best results on the development data.
+In order to provide the tagger with some information about the case of prepositions, a second training corpus was created in which prepositions which always select the same case, such as durch (through), were annotated with this case (APPR.Acc).
+7 It was planned to include also the Stanford tagger.
+8 In German, the genitive case of arguments is more and.
+Table 2: Tagging accuracies on development data in percent.
+Results for 2 and for 10 preceding POS tags as context are reported for our tagger.
+Table 3 shows the results of an evaluation based on the plain STTS tagset.
+The first result was obtained with TnT trained on Tiger data which was mapped to STTS before.
+The third row gives the corresponding figures for our tagger.
+5.1.2 Results Table 2 summarizes the results obtained with different taggers and tagsets on the development data.
+The TnT tagger achieves 86.3% accuracy on the default tagset.
+Apparently, the lexical features used by the SVMTool encode most of the information of the tagset refinement.
+A larger context of up to 10 preceding POS tags further increased the accuracy by 0.6, 0.6, and 0.7%, respectively.
+These figures are considerably lower than e.g. the 96.7% accuracy reported in Brants (2000) for the Negra treebank which is annotated with STTS tags without agreement features.
+Figure 2: Tagging accuracy on development data depending on context size Figure 2 shows that the tagging accuracy tends to increase with the context size.
+The best results are obtained with a context size of 10.
+Since German is a verb-final language, these tests clearly make sense.
+By far the most frequent tagging error was the confusion of nominative and accusative case.
+this error is not counted, the tagging accuracy on the development data rises from 92.17% to 94.27%.
+Hence there is no need to put aside training data for parameter tuning.
+The best accuracy of the TnT tagger was 88.2% with a maximal suffix length of 5.
+The corresponding figures for the test data are.
+The tagging accuracy reported by Kempe was below that of a traditional trigram tagger.
+Unlike him, we found that our tagging method outperformed state-of-the-art POS taggers on fine-grained POS tagging even if only a trigram context was used.
+Czech POS tagging has been extensively studied in the past (Hajicˇ and Vidova´-Hladka´, 1998; Hajicˇ et al., 2001; Votrubec, 2006).
+Morcˇe’s tagging accuracy was 95.12%, 0.3% better than the n-gram tagger.
+A hybrid system based on four different tagging methods reached an accuracy of 95.68%.
+Because of the different corpora used and the different amounts of lexical information available, a direct comparison to our results is difficult.
+The German tagging results are, to the best of our knowledge, the first published results for fine- grained POS tagging with the Tiger tagset.
+In experiments with German and Czech corpora, this method achieved a higher tagging accuracy than two state-of-the-art general-purpose POS taggers (TnT and SVMTool).We present a HMM part-of-speech tagging method which is particularly suited for POS tagsets with a large number of fine-grained tags.
+For languages with a rich morphology such as German or Czech, more fine-grained tagsets are often considered more appropriate.
+The additional information may also help to disambiguate the (base) part of speech.
+Unfortunately, the POS trigram consisting of the tags of the first three words does not occur in the Tiger corpus.
+Hence the context probability of the whole tag is. also 1.
+Discriminatively trained taggers, on the other hand, have difficulties to handle the huge number of features which are active at the same time if any possible combination of context attributes defines a separate feature.
+Our tagger generates a predictor for each feature (such as base POS, number, gender etc.) Instead of using a single tree for the prediction of all possible values of a feature (such as noun, article, etc. for base POS), the tagger builds a separate decision tree for each value.
+All context attributes other than the base POS are always used in combination with the base POS.
+The information gain is therefore 0.92 − (8/15 ∗ 1 − 7/15 ∗ 0.59) = 0.11.
+3 We also experimented with a pruning criterion based on binomial tests, which returned smaller trees with a slightly lower accuracy, although the difference in accuracy was never larger than 0.1% for any context size.
+Thus, pre-pruning with a threshold of 6 was used in the experiments.
+The first attribute of a POS tag is the main category.
+The singular attribute of a noun and an adjective POS tag are therefore two different attributes.4 Each position in the POS tags of a given category corresponds to a feature.
+The tagger may use an external lexicon which supplies entries for additional words which are not found in the training corpus, and additional tags for words which did occur in the training data.
+The best tag sequence is computed with the Viterbi algorithm.
+A supplementary lexicon was created by analyzing a word list which included all words from the faα paα (t) log paα(t) < 1 training, development, and test data with a German computationa l morphology.
+We took standard features from a 5 word window and M4LRL training without optimization of the regular- ization parameter C. In a second experiment, our tagger was also evaluated on the Czech Academic corpus 1.0 (Hladka´ et al., 2007) and compared to the TnT tag- ger.
+It is annotated with POS tags from the coarse-grained STTS tagset and with additional features encoding information about number, gender, case, person, degree, tense, and mood.
+The first 80% were used as training data, the first half of the rest as development data, and the last 10% as test data.
+Note that only the words, but not the POS tags from the test and development data were used, here.
+This strategy returned the best results on the development data.
+In order to provide the tagger with some information about the case of prepositions, a second training corpus was created in which prepositions which always select the same case, such as durch (through), were annotated with this case (APPR.Acc).
+7 It was planned to include also the Stanford tagger.
+8 In German, the genitive case of arguments is more and.
+Table 2: Tagging accuracies on development data in percent.
+Results for 2 and for 10 preceding POS tags as context are reported for our tagger.
+Table 3 shows the results of an evaluation based on the plain STTS tagset.
+The first result was obtained with TnT trained on Tiger data which was mapped to STTS before.
+The third row gives the corresponding figures for our tagger.
+5.1.2 Results Table 2 summarizes the results obtained with different taggers and tagsets on the development data.
+The TnT tagger achieves 86.3% accuracy on the default tagset.
+Apparently, the lexical features used by the SVMTool encode most of the information of the tagset refinement.
+A larger context of up to 10 preceding POS tags further increased the accuracy by 0.6, 0.6, and 0.7%, respectively.
+These figures are considerably lower than e.g. the 96.7% accuracy reported in Brants (2000) for the Negra treebank which is annotated with STTS tags without agreement features.
+Figure 2: Tagging accuracy on development data depending on context size Figure 2 shows that the tagging accuracy tends to increase with the context size.
+The best results are obtained with a context size of 10.
+Since German is a verb-final language, these tests clearly make sense.
+By far the most frequent tagging error was the confusion of nominative and accusative case.
+this error is not counted, the tagging accuracy on the development data rises from 92.17% to 94.27%.
+Hence there is no need to put aside training data for parameter tuning.
+The best accuracy of the TnT tagger was 88.2% with a maximal suffix length of 5.
+The corresponding figures for the test data are.
+The tagging accuracy reported by Kempe was below that of a traditional trigram tagger.
+Unlike him, we found that our tagging method outperformed state-of-the-art POS taggers on fine-grained POS tagging even if only a trigram context was used.
+Czech POS tagging has been extensively studied in the past (Hajicˇ and Vidova´-Hladka´, 1998; Hajicˇ et al., 2001; Votrubec, 2006).
+Morcˇe’s tagging accuracy was 95.12%, 0.3% better than the n-gram tagger.
+A hybrid system based on four different tagging methods reached an accuracy of 95.68%.
+Because of the different corpora used and the different amounts of lexical information available, a direct comparison to our results is difficult.
+The German tagging results are, to the best of our knowledge, the first published results for fine- grained POS tagging with the Tiger tagset.
 In experiments with German and Czech corpora, this method achieved a higher tagging accuracy than two state-of-the-art general-purpose POS taggers (TnT and SVMTool).

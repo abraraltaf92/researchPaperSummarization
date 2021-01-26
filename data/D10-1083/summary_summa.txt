@@ -1,0 +1,11 @@
+In this work, we take a more direct approach and treat a word type and its allowed POS tags as a primary element of the model.
+The model starts by generating a tag assignment for each word type in a vocabulary, assuming one tag per word.
+On one end of the spectrum are clustering approaches that assign a single POS tag to each word type (Schutze, 1995; Lamar et al., 2010).
+Another thread of relevant research has explored the use of features in unsupervised POS induction (Smith and Eisner, 2005; Berg-Kirkpatrick et al., 2010; Hasan and Ng, 2009).
+The type-level tag assignments T generate features associated with word types W .
+The equation for sampling a single type-level assignment Ti is given by, 0.2 0 5 10 15 20 25 30 Iteration Figure 2: Graph of the one-to-one accuracy of our full model (+FEATS) under the best hyperparameter setting by iteration (see Section 5).
+encodes the one tag per word constraint and is uni form over type-level tag assignments.
+Comparison with state-of-the-art taggers For comparison we consider two unsupervised tag- gers: the HMM with log-linear features of Berg- Kirkpatrick et al.
+However, our full model takes advantage of word features not present in Grac¸a et al.
+Even without features, but still using the tag prior, our median result is 52.0%, still significantly outperforming Grac¸a et al.
+We have presented a method for unsupervised part- of-speech tagging that considers a word type and its allowed POS tags as a primary element of the model.

@@ -1,0 +1,12 @@
+The strategic lazy incremental copy graph unification method is a combination of two methods for unifying hmture structures.
+One, called the lazy incremental copy graph unification method, achieves structure sharing with constant order data access time which reduces the cequired memory.
+Ile proposed an incremental copy graph unification method to avoid over copying and early copying.
+Pereira's structure sharing FS unification method can avoid this problem.
+This method is called the strategic ij!~crementaI copy graph unification method (the SING unification method).
+Incremental Copy Graph Unification PROCEDURE Unify(node1, node2) node1 = Dereference(nodel).
+The LING unification procedure uses a revised CopyNode procedure which does not copy structures immediately.
+Method In a system where FS unification is applied, there are features whose values fail relatively often in unification with other values and there are features whose values do not fail so often.
+That is, the SING unification method applied in an analysis system uses the failure tendency information acquired by a learning analysis process.
+By using learned failure tendency information, feature value unification is applied in an order that first treats features with the greatest tendency to fail.
+(2) Number of features FSs have: if each FS has only a small number of features, the efficiency gain from the SING unification method is small.
+The strategic lazy incremental copy graph (SLING) unification method combines two incremental copy graph unification methods: the lazy incremental copy graph (LING) unification method and the strategic incremental copy graph (SING) unification method.

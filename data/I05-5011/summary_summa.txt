@@ -1,0 +1,9 @@
+We are focusing on phrases which have two Named Entities (NEs), as those types of phrases are very important for IE applications.
+After tagging a large corpus with an automatic NE tagger, the method tries to find sets of paraphrases automatically without being given a seed phrase or any kinds of cue.
+As can be seen in the example, the first two phrases have a different order of NE names from the last two, so we can determine that the last two phrases represent a reversed relation.
+D o m ai n # of ph ras es t o t a l p h r a s e s ac cu ra cy C C 7 o r m o r e 1 0 5 8 7 .
+As can be seen in Figure 3, the phrases in the “agree” set include completely different relationships, which are not paraphrases.
+Another approach to finding paraphrases is to find phrases which take similar subjects and objects in large corpora by using mutual information of word distribution [Lin and Pantel 01].
+While there are other obstacles to completing this idea, we believe automatic paraphrase discovery is an important component for building a fully automatic information extraction system.
+We are focusing on phrases which have two Named Entities (NEs), as those types of phrases are very important for IE applications.
+After tagging a large corpus with an automatic NE tagger, the method tries to find sets of paraphrases automatically without being given a seed phrase or any kind of cue.

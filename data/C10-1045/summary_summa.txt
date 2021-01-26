@@ -1,0 +1,11 @@
+In this paper, we offer broad insight into the underperformance of Arabic constituency parsing by analyzing the interplay of linguistic phenomena, annotation choices, and model design.
+To facilitate comparison with previous work, we exhaustively evaluate this grammar and two other parsing models when gold segmentation is assumed (§5).
+We propose a limit of 70 words for Arabic parsing evaluations.
+discourse-level coordination ambiguity in Arabic is a significant source of parsing errors (Table 8c).
+We can use the preceding linguistic and annotation insights to build a manually annotated Arabic grammar in the manner of Klein and Manning (2003).
+The Stanford parser includes both the manually annotated grammar (§4) and an Arabic unknown word model with the following lexical features: 1.
+Because the Bikel parser has been parameter- ized for Arabic by the LDC, we do not change the default model settings.
+The errors shown are from the Berkeley parser output, but they are representative of the other two parsing models.
+Despite their simplicity, uni- gram weights have been shown as an effective feature in segmentation models (Dyer, 2009).13 The joint parser/segmenter is compared to a pipeline that uses MADA (v3.0), a state-of-the-art Arabic segmenter, configured to replicate ATB segmentation (Habash and Rambow, 2005).
+By establishing significantly higher parsing baselines, we have shown that Arabic parsing performance is not as poor as previously thought, but remains much lower than English.
+Our results suggest that current parsing models would benefit from better annotation consistency and enriched annotation in certain syntactic configurations.

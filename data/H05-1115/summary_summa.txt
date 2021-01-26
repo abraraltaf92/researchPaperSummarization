@@ -1,0 +1,10 @@
+Currently, we address the question-focused sentence retrieval task.
+There areedges between nodes for which the cosine similarity between the respective pair of sentences exceedsa given threshold.
+Therefore, sentences that contain the most salient information in the document set should be very centralwithin the graph.Figure 2 shows an example of a similarity graph for a set of five input sentences, using a cosine similarity threshold of 0.15.
+Below,we describe a topic-sensitive version of LexRank,which is more appropriate for the question-focusedsentence retrieval problem.
+Then the relevance of a sentence s tothe question q is computed by: rel(s|q) =Xw?q log(tfw,s + 1)� log(tfw,q + 1) � idfw (2) where tfw,s and tfw,q are the number of times wappears in s and q, respectively.
+This model hasproven to be successful in query-based sentence retrieval (Allan et al., 2003), and is used as our competitive baseline in this study (e.g. Tables 4, 5 and7).
+For each sentence and question pair in a givencluster, the judges were asked to indicate whetheror not the sentence contained a complete answerto the question.
+The idea behind using LexRank for sentence retrieval is that a system that considers only the similarity between candidate sentences and the inputquery, and not the similarity between the candidatesentences themselves, is likely to miss some important sentences.
+Table 9: Top ranked sentences using theLR[0.20,0.95] system on the question �What causedthe Kursk to sink?� answers from the retrieved sentences.
+As discussed in Section 2, our goal wasto develop a topic-sensitive version of LexRank andto use it to improve a baseline system, which hadpreviously been used successfully for query-basedsentence retrieval (Allan et al., 2003).

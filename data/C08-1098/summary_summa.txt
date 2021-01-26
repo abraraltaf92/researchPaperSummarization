@@ -1,0 +1,12 @@
+The tagger may use an external lexicon which supplies entries for additional words which are not found in the training corpus, and additional tags for words which did occur in the training data.
+It is annotated with POS tags from the coarse-grained STTS tagset and with additional features encoding information about number, gender, case, person, degree, tense, and mood.
+Note that only the words, but not the POS tags from the test and development data were used, here.
+Table 2: Tagging accuracies on development data in percent.
+Results for 2 and for 10 preceding POS tags as context are reported for our tagger.
+5.1.2 Results Table 2 summarizes the results obtained with different taggers and tagsets on the development data.
+A larger context of up to 10 preceding POS tags further increased the accuracy by 0.6, 0.6, and 0.7%, respectively.
+Figure 2: Tagging accuracy on development data depending on context size Figure 2 shows that the tagging accuracy tends to increase with the context size.
+this error is not counted, the tagging accuracy on the development data rises from 92.17% to 94.27%.
+Unlike him, we found that our tagging method outperformed state-of-the-art POS taggers on fine-grained POS tagging even if only a trigram context was used.
+The German tagging results are, to the best of our knowledge, the first published results for fine- grained POS tagging with the Tiger tagset.
+In experiments with German and Czech corpora, this method achieved a higher tagging accuracy than two state-of-the-art general-purpose POS taggers (TnT and SVMTool).

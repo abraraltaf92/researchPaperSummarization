@@ -1,0 +1,10 @@
+In Section 3, we introduce our novel concept to word reordering and a DP-based search, which is especially suitable for the translation direction from German to English.
+For the translation model Pr(fJ 1 jeI 1), we go on the assumption that each source word is aligned to exactly one target word.
+The alignment model uses two kinds of parameters: alignment probabilities p(aj jaj􀀀1; I; J), where the probability of alignment aj for position j depends on the previous alignment position aj􀀀1 (Ney et al., 2000) and lexicon probabilities p(fj jeaj ).
+To explicitly handle the word reordering between words in source and target language, we use the concept of the so-called inverted alignments as given in (Ney et al., 2000).
+Restrictions We compare our new approach with the word reordering used in the IBM translation approach (Berger et al., 1996).
+A procedural definition to restrict1In the approach described in (Berger et al., 1996), a mor phological analysis is carried out and word morphemes rather than full-form words are used during the search.
+Depending on the threshold t0, the search algorithm may miss the globally optimal path which typically results in additional translation errors.
+In the last example, the less restrictive IbmS word reordering leads to a better translation, although the QmS translation is still acceptable.
+In this paper, we have presented a new, eÆcient DP-based search procedure for statistical machine translation.
+Future extensions of the system might include: 1) An extended translation model, where we use more context to predict a source word.

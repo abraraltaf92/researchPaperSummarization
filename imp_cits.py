@@ -1,7 +1,7 @@
 import pandas as pd
 import glob
 from t5 import t5_summary
-
+from suma import s_s
 
 def imp_sent(f_name):
     cit_files = list(glob.glob(f_name + "/citation*.csv"))
@@ -31,3 +31,6 @@ def imp_sent(f_name):
         filehandle.write(text)
         with open(f_name + '/summary_t5.txt', 'w', encoding='utf-8') as filehandle_2:
             t5_summary(text, filehandle_2)
+        with open(f_name + '/summary_summa.txt','w', encoding='utf-8') as filehandle_3:
+            s_s(text,filehandle_3)
+            

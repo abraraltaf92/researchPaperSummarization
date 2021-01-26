@@ -1,0 +1,8 @@
+The paper describes refinements that are currently being investigated in a model for part-of-speech assignment to words in unrestricted text.
+Words are represented by equivalence classes to reduce the number of parameters required and provide an essentially vocabulary-independent model.
+An alternative approach taken by Jelinek, (Jelinek, 1985) is to view the training problem in terms of a "hidden" Markov model: that is, only the words of the training text are available, their corresponding categories are not known.
+In the 21 category model reported in Kupiec (1989) only 129 equivalence classes were required to cover a 30,000 word dictionary.
+The initial values of the model parameters are calculated from word occurrence probabilities, such that words are initially assumed to function equally probably as any of their possible categories.
+ADJECTIVE DETERMINER To all states NOUN in Basic Network "Transitions to � To all states all states in in Basic Network Basic Network except NOUN and ADJECTIVE AUGMENTED NETWORK BASIC NETWORK FULLY-CONNECTED NETWORK CONTAINING ALL STATES EXCEPT DETERMINER Figure 1: Extending the Basic Model Augmenting the Model by Use of Networks The basic model consists of a first-order fully connected network.
+SINGULAR ALL STATES IN BASIC NETWORK NOT SHOWN Figure 2: Augmented Networks for Example of Subject/Verb Agreement For example, consider the word "up" in the following sentences: "He ran up a big bill".
+It can be trained reliably on moderate amounts of training text, and through the use of selectively augmented networks it can model high-order dependencies without requiring an excessive number of parameters.

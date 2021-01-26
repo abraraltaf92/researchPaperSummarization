@@ -1,0 +1,10 @@
+The use of global features has improved the performance on MUC6 test data from 90.75% to 93.27% (27% reduction in errors), and the performance on MUC7 test data from 85.22% to 87.24% (14% reduction in errors).
+MUC7 has also seen hybrids of statistical NERs and hand-coded systems (Mikheev et al., 1998; Borthwick, 1999), notably Mikheev' s system, which achieved the best performance of 93.39% on the official NE test data.
+It uses a maximum entropy framework and classifies each word given its features.
+The features we used can be divided into 2 classes: local and global.
+Global features are extracted from other occurrences of the same token in the whole document.
+The local features used are similar to those used in BBN' s IdentiFinder (Bikel et al., 1999) or MENE (Borthwick, 1999).
+For each token , zero, one, or more of the features in each feature group are set to 1.
+This feature imposes constraints Table 1: Features based on the token string that are based on the probability of each name class during training.
+The baseline system in Table 3 refers to the maximum entropy system that uses only local features.
+The secondary classifier in (Borthwick, 1999) uses information not just from the current article, but also from the whole test corpus, with an additional feature that indicates if the information comes from the same document or from another document.
